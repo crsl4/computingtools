@@ -12,6 +12,7 @@ as well as motivated PhD students in the biological sciences.
 <!-- and advanced undergraduates majoring in Statistics.-->
 Students will benefit most from taking this course at the beginning of their graduate program,
 to use these tools for their research, during their time at UW-Madison and beyond.
+Only basic statistical knowledge will be assumed.
 
 learning objectives
 -------------------
