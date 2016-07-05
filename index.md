@@ -20,6 +20,13 @@ Course Material
 
 Resources
 
-- [software carpentry](http://uw-madison-aci.github.io/2016-06-08-uwmadison/) at UW-Madison
-- [reproducible](https://github.com/kbroman/Talk_ReproRes) research by Karl Broman
+- [Software Carpentry](http://software-carpentry.org/lessons/) and last session
+  at [UW-Madison](http://uw-madison-aci.github.io/2016-06-08-uwmadison/)
+- [Reproducible Research](https://github.com/kbroman/Talk_ReproRes) by Karl Broman
+- Karl Broman's excellent [short tutorials](http://kbroman.org/pages/tutorials.html) on
+  git/github, make, perl, and more.
 - [Bioinformatics Data Skills](http://shop.oreilly.com/product/0636920030157.do) by Vince Buffalo
+- [Professional Skills for Data Science](http://www.stat.wisc.edu/network-skills) by Brian Yandell,
+  and his course on the same topic
+  [Stat 627](https://github.com/datascience-uwmadison/stat627).
+- [Jenny Brian's stat 545](http://stat545-ubc.github.io/) at UBC
