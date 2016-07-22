@@ -63,9 +63,9 @@ First class: 2:30-3:45 in 120 Ingraham.
 
 --------
 
-<!--
-### overview
+### overview of topic coverage
 
+(subject to change)
 
 | week    | topic |
 |:--------|:------|
@@ -88,4 +88,3 @@ First class: 2:30-3:45 in 120 Ingraham.
 |---------|---|
 |         |   |
 {: rules="groups"}
--->
