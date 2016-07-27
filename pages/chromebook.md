@@ -8,7 +8,6 @@ I got the Acer Chromebook 14 ($300) because it has an Intel chip, 32GB disk spac
 
 install Linux
 -------------
-
 I used Crouton to instal Linux on it. See
 [this](https://www.linux.com/learn/how-easily-install-ubuntu-chromebook-crouton)
 and [this](https://github.com/dnschneid/crouton).
@@ -19,7 +18,11 @@ really hard. In the terminal I did this to fix the sensitivity of the touchpad:
 `synclient FingerLow=1 FingerHigh=5`.
 
 I updated the system just to make sure:
-```sudo apt-get update```, then ```sudo apt-get upgrade``` and then ```sudo apt-get install```.
+
+    sudo apt-get update
+    sudo apt-get upgrade
+    sudo apt-get install
+
 Afterwards, it was time to install a bunch of things.
 
 <!--
@@ -75,7 +78,8 @@ with gedit, and you can edit the remote file directly.
 install Atom
 ------------
 great [text editor](https://github.com/atom/atom).
-It has a bunch of dependencies.
+might be too heavy for a chromebook though (?).
+has a bunch of dependencies.
 
 - First I tried the easy way: downloaded Atom v1.8.0
 [here](https://github.com/atom/atom/releases/download/v1.8.0/atom-amd64.deb) and ran
@@ -105,11 +109,10 @@ then
 Then I followed the build instructions to build `atom`, in a new directory that I called
 `apps`: 
 
-    ```
     mkdir apps
     cd apps
     git clone https://github.com/atom/atom
-    ```
+
   etc. But the build failed in the end.
 
 - So I retried the installation using the pre-built package downloaded earlier,
