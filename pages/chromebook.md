@@ -105,19 +105,19 @@ then
 Then I followed the build instructions to build `atom`, in a new directory that I called
 `apps`: 
 
-```
-mkdir apps
-cd apps
-git clone https://github.com/atom/atom
-```
-etc. But the build failed in the end.
+    ```
+    mkdir apps
+    cd apps
+    git clone https://github.com/atom/atom
+    ```
+  etc. But the build failed in the end.
 
 - So I retried the installation using the pre-built package downloaded earlier,
 hoping that the dependencies that were missing earlier would now be taken care of:
-        sudo dpkg --install ~/Downloads/atom-amd64.deb
-This time, it worked.
 
-I could finally launch my text editor by doing `atom`.
+        sudo dpkg --install ~/Downloads/atom-amd64.deb
+
+  This time, it worked. I could finally launch my text editor by doing `atom`.
 
 tips
 ----
