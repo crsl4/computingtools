@@ -49,13 +49,9 @@ install qpdfview
 to view pdf files. Done this
 
     sudo apt-get install software-properties-common
-
-then
-
     sudo apt-get install python-software-properties
 
-to install `add-apt-repository`,
-then this:
+to install `add-apt-repository`, then this:
 
     sudo add-apt-repository ppa:b-eltzner/qpdfview
     sudo apt-get update
@@ -83,7 +79,9 @@ It has a bunch of dependencies.
 
 - First I tried the easy way: downloaded Atom v1.8.0
 [here](https://github.com/atom/atom/releases/download/v1.8.0/atom-amd64.deb) and ran
-    sudo dpkg --install atom-amd64.deb
+
+      sudo dpkg --install atom-amd64.deb
+
 But it complained about unmet dependencies.
 
 - Next I tried building the package from source, using instructions
