@@ -46,18 +46,20 @@ at the end of my bash profile configuration file: `.bashrc`.
 
 install qpdfview
 ----------------
-to view pdf files. Done this:
+to view pdf files. Done this
+
     sudo apt-get install software-properties-common
+
 then
+
     sudo apt-get install python-software-properties
+
 to install `add-apt-repository`,
 then this:
 
-```
-sudo add-apt-repository ppa:b-eltzner/qpdfview
-sudo apt-get update
-sudo apt-get install qpdfview
-```
+    sudo add-apt-repository ppa:b-eltzner/qpdfview
+    sudo apt-get update
+    sudo apt-get install qpdfview
 
 install Nautilus
 ----------------
