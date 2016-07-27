@@ -19,7 +19,7 @@ really hard. In the terminal I did this to fix the sensitivity of the touchpad:
 `synclient FingerLow=1 FingerHigh=5`.
 
 I updated the system just to make sure:
-`sudo apt-get update`, then `sudo apt-get upgrade` and then `sudo apt-get install`.
+```sudo apt-get update```, then ```sudo apt-get upgrade``` and then ```sudo apt-get install```.
 Afterwards, it was time to install a bunch of things.
 
 <!--
@@ -82,17 +82,21 @@ It has a bunch of dependencies.
 
       sudo dpkg --install atom-amd64.deb
 
-But it complained about unmet dependencies.
+  But it complained about unmet dependencies.
 
 - Next I tried building the package from source, using instructions
 [here](https://github.com/atom/atom/blob/master/docs/build-instructions/linux.md),
 which start by getting dependencies (many are essential tools anyway) with this:
-    sudo apt-get install build-essential libgnome-keyring-dev fakeroot
-but their own dependencies were not met, like `g++`, `make` and `dpkg-dev`.
-So I ran this to get them: `sudo apt-get -f install` and then again
-    sudo apt-get install build-essential libgnome-keyring-dev fakeroot 
-I ran another update of the system: `sudo apt-get update` then got `curl` like this:
-`sudo apt-get install curl`
+
+      sudo apt-get install build-essential libgnome-keyring-dev fakeroot
+
+  but their own dependencies were not met, like `g++`, `make` and `dpkg-dev`.
+So I ran this to get them: ```sudo apt-get -f install``` and then again
+
+      sudo apt-get install build-essential libgnome-keyring-dev fakeroot 
+
+  I ran another update of the system: ```sudo apt-get update``` then got `curl` like this:
+```sudo apt-get install curl```
 
   Another of `atom`'s dependency is `Node.js`:
     curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
