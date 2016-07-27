@@ -68,8 +68,7 @@ Students with a Windows machine have the following options:
 - buy an Intel-based [chromebook](http://www.google.com/chromebook/) running
   [Linux](https://github.com/dnschneid/crouton).
   They start around $150-$200, so you can consider that this in lieu of a textbook.
-  I will experiment with chromebooks and will report any additional advice on this,
-  later in July or August.
+  I started experimenting with a chromebook, see my updates [here](chromebook.html).
 
 - connect to a remote Linux server in Statistics. An important downside is the
   lack of admin (super-user) permission, which may prevent the upgrade or installation of
