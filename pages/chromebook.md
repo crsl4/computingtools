@@ -22,12 +22,14 @@ I updated the system just to make sure:
 `sudo apt-get update`, then `sudo apt-get upgrade` and then `sudo apt-get install`.
 Afterwards, it was time to install a bunch of things.
 
+<!--
 Later, I downloaded the crouton extension and ran this in the chromeOS shell
 to be able to use Ubuntu within ChromeOS's browser:
 `sudo sh -e ~/Download/crouton -u -t xiwi`. To check what I had installed, I did
 `sudo edit-chroot -al` (from the ChromeOS shell). To revert back to the `xorg`
 method to handle windows instead of xiwi, I did
 `sudo sh -e ~/Download/crouton -u -t x11`.
+-->
 
 install git
 -----------
@@ -38,15 +40,19 @@ install gedit
 -------------
 Oh my, there was no text editor. So I got `gedit` like this:
 `sudo apt-get install gedit`.
+
 I used it to add the line `synclient FingerLow=1 FingerHigh=5`
-at the end of my bash profile configuration file, `.bashrc`.
+at the end of my bash profile configuration file: `.bashrc`.
 
 install qpdfview
 ----------------
 to view pdf files. Done this:
-`sudo apt-get install software-properties-common` then
-`sudo apt-get install python-software-properties` to install `add-apt-repository`,
+    sudo apt-get install software-properties-common
+then
+    sudo apt-get install python-software-properties
+to install `add-apt-repository`,
 then this:
+
 ```
 sudo add-apt-repository ppa:b-eltzner/qpdfview
 sudo apt-get update
@@ -61,11 +67,11 @@ Nautilus is a file browser that makes it really easy to connect to a server
 having to store them locally.
 
 I installed it with `sudo apt-get install nautilus`. It can be open by
-clicking on a folder, or simply typing `nautilus .` in the terminal.
+clicking on a folder, or simply typing in the terminal: `nautilus .`
 
 Go to `File` then `Connect to server` and enter the information from one
-of the statistics servers (using SSH). By clicking on a text file, it will open
-with gedit and you can edit the remote file directly.
+of the statistics servers (using SSH). Clicking on a text file to open
+with gedit, and you can edit the remote file directly.
 
 
 install Atom
@@ -75,27 +81,37 @@ It has a bunch of dependencies.
 
 - First I tried the easy way: downloaded Atom v1.8.0
 [here](https://github.com/atom/atom/releases/download/v1.8.0/atom-amd64.deb) and ran
-`sudo dpkg --install atom-amd64.deb`. But it complained about unmet dependencies.
+    sudo dpkg --install atom-amd64.deb
+But it complained about unmet dependencies.
 
 - Next I tried building the package from source, using instructions
 [here](https://github.com/atom/atom/blob/master/docs/build-instructions/linux.md),
 which start by getting dependencies (many are essential tools anyway) with this:
-`sudo apt-get install build-essential libgnome-keyring-dev fakeroot`
+    sudo apt-get install build-essential libgnome-keyring-dev fakeroot
 but their own dependencies were not met, like `g++`, `make` and `dpkg-dev`.
 So I ran this to get them: `sudo apt-get -f install` and then again
-`sudo apt-get install build-essential libgnome-keyring-dev fakeroot`.  
-I ran another update of the system: `sudo apt-get update` then got `curl`:
-`sudo apt-get install curl`.
-Another of `atom`'s dependency is `Node.js`:
-`curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -` then
-`sudo apt-get install -y nodejs`.  
+    sudo apt-get install build-essential libgnome-keyring-dev fakeroot 
+I ran another update of the system: `sudo apt-get update` then got `curl` like this:
+`sudo apt-get install curl`
+
+  Another of `atom`'s dependency is `Node.js`:
+    curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+then
+    sudo apt-get install -y nodejs
 Then I followed the build instructions to build `atom`, in a new directory that I called
-`apps`: `mkdir apps` then `cd apps` then `git clone https://github.com/atom/atom` etc.
-The build failed in the end.
+`apps`: 
+
+```
+mkdir apps
+cd apps
+git clone https://github.com/atom/atom
+```
+etc. But the build failed in the end.
 
 - So I retried the installation using the pre-built package downloaded earlier,
 hoping that the dependencies that were missing earlier would now be taken care of:
-`sudo dpkg --install ~/Downloads/atom-amd64.deb`. This time, it worked.
+        sudo dpkg --install ~/Downloads/atom-amd64.deb
+This time, it worked.
 
 I could finally launch my text editor by doing `atom`.
 
