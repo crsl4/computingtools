@@ -49,12 +49,13 @@ at the end of my bash profile configuration file: `.bashrc`.
 
 install qpdfview
 ----------------
-to view pdf files. Done this
+to view pdf files, supposed to be light and fast.
+I did this to install `add-apt-repository`:
 
     sudo apt-get install software-properties-common
     sudo apt-get install python-software-properties
 
-to install `add-apt-repository`, then this:
+then this to install `qpdfview` itself:
 
     sudo add-apt-repository ppa:b-eltzner/qpdfview
     sudo apt-get update
