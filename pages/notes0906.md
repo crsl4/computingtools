@@ -122,7 +122,7 @@ from [Wilson et al. 2014](http://journals.plos.org/plosbiology/article?id=10.137
 
 Python example (from [Bioinformatics Data Skills](http://shop.oreilly.com/product/0636920030157.do))
 
-```Python
+``` python
 EPS = 0.00001 # a small number to use when comparing floating-point values
 
 def add(x, y):
