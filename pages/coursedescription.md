@@ -50,7 +50,7 @@ tools and topics
 - version control and collaboration: git and [GitHub](https://github.com)
 - [best practices for scientific computing](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745)
 - scripting: Perl and Python
-- learning a programming language: [Julia]()
+- learning a programming language: [Julia](http://julialang.org)
 
 hardware requirements
 ---------------------

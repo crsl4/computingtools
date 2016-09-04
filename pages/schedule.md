@@ -20,12 +20,13 @@ jump to:
 #### Tue 9/6
 
 First class: 2:30-3:45 in 120 Ingraham.
+[Notes](notes0906.html)
 
 - why should we learn these things?
 - expectations?
 - logistics
 - best practices
-- let's get started: bash shell
+- introduction to the Unix shell
 
 <!--
 ---
