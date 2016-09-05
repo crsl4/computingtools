@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 9/8 notes
+title: 9/6 notes
 description: notes, links, example code and exercises
 ---
 
@@ -227,12 +227,14 @@ The shell is an incredibly powerful tool:
 
 deletes all large alignment files `aligned-reads_1` to `aligned-reads_1000`
 in old temporary directory `tmp-data`:
-```
-> rm -rf tmp-data/aligned-reads*
+
+```shell
+$ rm -rf tmp-data/aligned-reads*
 ```
 
 deletes your entire current directory (ouch!):
-```
+
+```shell
 > rm -rf tmp-data/aligned-reads *
 rm: tmp-data/aligned-reads: No such file or directory
 ```
@@ -278,16 +280,17 @@ cat tb1-protein.fasta tga1-protein.fasta
 cat tb1-protein.fasta tga1-protein.fasta > zea-proteins.fasta
 ls -lrt
 ```
-`-l`: in list format  
-`-r`: in reverse order  
+`-l`: in list format;
+`-r`: in reverse order;
 `-t`: ordered by time
 
-data processed without storing huge amounts of data in our computers' memory: very efficient
+Streams process data without storing huge amounts in our computers' memory: very efficient
 
 ## let's get started: the bash shell
 
 ```shell
-echo $SHELL
+$ echo $SHELL
+/bin/bash
 ```
 quick count: shell versus terminal? absolute versus relative path? `grep`?
 
@@ -295,8 +298,17 @@ We will follow the
 [software carpentry introduction](http://swcarpentry.github.io/shell-novice/).
 Click on 'setup' to download the data.
 
-## next time:
+## homework
 
-Text editor
-Typing skills
-Set up and manage an analysis project
+- finish the software carpentry introduction, and **note** all your questions.
+  We will go through them in the next class period.
+- create [github](https://github.com) account. Pick a "professional" name (like your real name)
+- make sure you have a good text editor, install one if not
+    * [TextWrangler](http://www.barebones.com/products/textwrangler/download.html) or
+      [Atom](https://atom.io) for Mac users
+    * [Emacs](https://www.gnu.org/software/emacs/) or
+      [Atom](https://atom.io) for Linux users
+
+      In the terminal, type `which emacs` to see if you have emacs installed,
+      `emacs --version` to see the version.
+
