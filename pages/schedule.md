@@ -12,7 +12,7 @@ Please do not expect any quick response to emails during this period.
 
 jump to:
 
-- [next class](#T-9/6) details
+- [next class](#Tue-9/6) details
 - [overview](#overview) of topic coverage
 
 ---
