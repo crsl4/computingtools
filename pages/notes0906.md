@@ -324,16 +324,12 @@ Streams process data without storing huge amounts in our computers' memory: very
 $ echo $SHELL
 /bin/bash
 ```
-quick count: shell versus terminal? absolute versus relative path? `grep`?
-
-We will follow the
-[software carpentry introduction](http://swcarpentry.github.io/shell-novice/).
-Click on 'setup' to download the data.
 
 ## homework
 
-- continue the software carpentry introduction, and **note** all your questions.
-  We will go through them in the next class period.
+- you may want to start the software carpentry introduction.
+  If so, **note** all your questions.
+  We will go through them in the [next](notes0908.html) class period.
 - create a [github](https://github.com) account,
   pick a "professional" name (like your real name)
 - make sure you have a good text editor, install one if not (see below).

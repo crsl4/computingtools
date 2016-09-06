@@ -6,7 +6,11 @@ description: notes, links, example code, exercises
 
 ## the Unix shell
 
+quick count: shell versus terminal? absolute versus relative path? `grep`?
+
+We will follow the
 [software carpentry introduction](http://swcarpentry.github.io/shell-novice/).
+Click on 'setup' to download the data.
 
 summary:
 
