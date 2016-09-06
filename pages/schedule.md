@@ -4,23 +4,15 @@ title: Schedule
 description: topic, assignments, notes, for each class period
 ---
 
-Will get updated each week with the topic, assignments and notes for each class period.
-Refresh your browser!
-
-I will be away at a conference August 21-29.
-Please do not expect any quick response to emails during this period.
-
-jump to:
-
-- [next class](#tue-96) details
-- [overview](#overview-of-topic-coverage) of topic coverage
+Will get updated each week, refresh your browser!  
+**class**: 2:30-3:45 in 120 Ingraham  
+**office hours**: T 11-noon & W 12:30-2pm, 1208 Medical Sciences Center  
+jump to: <!--: [next class](#tue-96) details or -->
+[overview](#overview-of-topic-coverage) of topic coverage
 
 ---
 
-#### Tue 9/6
-
-First class: 2:30-3:45 in 120 Ingraham.
-[Notes](notes0906.html)
+#### [Tue 9/6](notes0906.html)
 
 - why should we learn these things?
 - expectations?
@@ -28,9 +20,7 @@ First class: 2:30-3:45 in 120 Ingraham.
 - best practices
 - introduction to the Unix shell
 
-#### Thu 9/8
-
-[Notes](notes0908.html)
+#### [Thu 9/8](notes0908.html)
 
 - intro to the Unix shell, con't
 - file names
