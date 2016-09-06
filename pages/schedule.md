@@ -12,8 +12,8 @@ Please do not expect any quick response to emails during this period.
 
 jump to:
 
-- [next class](#T-9/6) details
-- [overview](#overview) of topic coverage
+- [next class](#tue-96) details
+- [overview](#overview-of-topic-coverage) of topic coverage
 
 ---
 
@@ -28,10 +28,17 @@ First class: 2:30-3:45 in 120 Ingraham.
 - best practices
 - introduction to the Unix shell
 
+#### Thu 9/8
+
+[Notes](notes0908.html)
+
+- intro to the Unix shell, con't
+- file names
+- text editor
+- typing skills
+
 <!--
 ---
-
-#### Thu 9/8
 
 #### Tue 9/13 - Thu 9/15
 
@@ -76,16 +83,16 @@ First class: 2:30-3:45 in 120 Ingraham.
 | 9/27-29 | perl, recall/apply best practices |
 | 10/4-6  | perl for a simulation study |
 | 10/11-13| intro to python, object-oriented programming |
-| 10/18-20| python (cont')  |
+| 10/18-20| python (con't)  |
 | 10/25-27| intro to julia, just-in-time compiled |
-| 11/1-3  | julia (cont')   |
+| 11/1-3  | julia (con't)   |
 | 11/8-10 | midterm project: intro to subject area, get started |
-| 11/15-17| project (cont'): practice, practice |
-| 11/22   | project (cont'): peer review |
+| 11/15-17| project (con't): practice, practice |
+| 11/22   | project (con't): peer review |
 | 11/24   | no class (Thanksgiving) |
 | 11/29-12/1| final project |
-| 12/6-8  | final project (cont') |
-| 12/13-15| final project (cont') |
+| 12/6-8  | final project (con't) |
+| 12/13-15| final project (con't) |
 |---------|---|
 |         |   |
 {: rules="groups"}
