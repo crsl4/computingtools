@@ -191,8 +191,9 @@ List of estimated networks for all runs:
 -------
 ```
 
-each analysis also had a log file like
-[`TestResults/out files/timetest1_snaq.log`](https://github.com/frupaul/Test-for-SNAQ-by-Reduced-Data-Sample/blob/master/TestResults/log%20files/timetest1_snaq.log)
+each analysis also had a log file, e.g.
+`TestResults/out files/timetest1_snaq.log`
+<!-- https://github.com/frupaul/Test-for-SNAQ-by-Reduced-Data-Sample/-->
 which starts like this:
 
 ```

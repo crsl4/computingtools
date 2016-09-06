@@ -15,11 +15,11 @@ summary:
 - shortcuts: `.`, `..`, `~`, `-`
 - tab completion
 
-| shell commands |      |
+|          |      |
 |:---------|:-----------|
 | `whoami` | who am I? to get your username |
 | `pwd`    | print working directory. where am I? |
-| `ls`     | list. many options, e.g. `-l` (long) `-lrt` or `-a`|
+| `ls`     | list. many options, e.g. `-a` (all) `-l` (long) `-lrt` (reverse-sorted by time) |
 | `man ls` | manual for `ls`. very standard option: `--help` |
 | `cd`     | change directory |
 | `mkdir`  | make directory   |
@@ -45,12 +45,13 @@ summary:
   - `?` matches exactly 1 characters
 
   the shell expands the wild cards *before* running the command.
-- `>` to redirect the output of one command to a file
-- `|` pipes the output of one command to the input of another command: pipeline!
-  very fast: uses streams only.
-- `>>` redirects output and appends to a file
-- `2>` redirects standard error
-- `&>` redirects both output and error (bash shell)
+- pipes and redirection:  
+ `>` to redirect the output of one command to a file  
+ `|` pipes the output of one command to the input of another command: pipeline!
+  very fast: uses streams only.  
+ `>>` redirects output and appends to a file  
+ `2>` redirects standard error  
+ `&>` redirects both output and error (bash shell)
 
 ```
 ls -d * unknownfile
