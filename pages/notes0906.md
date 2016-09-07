@@ -60,6 +60,7 @@ details on [topic coverage](schedule.html#overview-of-topic-coverage)
 
 ## expectations
 
+- bring your laptop to class every time
 - very active participation. no practice = no learning.
     * ask questions
     * try things out, spend time debugging, again and again
