@@ -17,14 +17,14 @@ summary:
 - directory structure, root is `/`
 - relative versus absolute paths
 - shortcuts: `.`, `..`, `~`, `-`
-- tab completion
+- tab completion to get program and file names
+- up/down arrows and `!` to repeat commands
 
 |          |      |
 |:---------|:-----------|
 | `whoami` | who am I? to get your username |
 | `pwd`    | print working directory. where am I? |
 | `ls`     | list. many options, e.g. `-a` (all) `-l` (long) `-lrt` (reverse-sorted by time) |
-| `man ls` | manual for `ls`. very standard option: `--help` |
 | `cd`     | change directory |
 | `mkdir`  | make directory   |
 | `rm`     | remove (forever). `-f` to force, `-i` to ask interactively, `-r` recursively
@@ -40,6 +40,9 @@ summary:
 | `tail`   | last 10 lines. `-n 3` for last 3 lines, `-n +30` for line 30 and up |
 | `uniq`   | filters out repeated lines (consecutive). `-c` to get counts |
 | `cut`    | cut and return column(s). `-d,` to set the comma as field delimiter (tab otherwise), `-f2` to get 2nd field (column) |
+| `echo`   | print |
+| `history`| shows the history of all previous commands, numbered |
+| `!`      | `!76` to re-execute command number 76 in the history, `!$` for last word or last command |
 |----------|------------|
 |         |   |
 {: rules="groups"}
@@ -114,10 +117,43 @@ how can we remove this directory?
   lexicographic sorting files (like with `ls`) would otherwise place
   `file-1390.txt` before `file-21.txt`.
 
-
 ## text editor
 
 - see [here](notes0906.html#text-editor)
+
+## less and man
+
+- `man ls` to get help on `ls`
+- other very standard option: `--help`
+- the result of `man` is actually passed on to the "viewer" `less`
+- try `more` on a long file: shows more and more, one page at a time
+- `less` is similar, but much better. Name from "less is more".
+  Power of text streams: can read very long files without having
+  to load the whole thing in memory.
+
+some commands for `less` (there are many more!):
+
+|       |    |
+|:------|:---|
+| q     | quit             |
+| enter | show next line   |
+| space | show next "page" |
+| d     | show next half-page |
+| b     | back one page |
+| y     | back one line |
+| g or < | go to first line. 4g or 4G: go to 4th line |
+| G or > | Go to last line   |
+| /pattern | search forward  |
+| ?pattern | search backward |
+| n        | next: repeat previous search |
+|----------|------------|
+|         |   |
+{: rules="groups"}
+
+- use these commands for `less` to search a manual page and
+  navigate fast between the top, bottom, marked positions,
+  and searched keywords: `man less`
+- how to search for anything that does *not* match a pattern?
 
 ## typing skills
 
