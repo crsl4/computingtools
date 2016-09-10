@@ -77,8 +77,11 @@ Students with a Windows machine have the following options:
 - not recommended and not supported: install bash and a set of Unix commands on your machine.
   This will likely involve some trial-error and frustration, but see
   [here](http://uw-madison-aci.github.io/2016-06-08-uwmadison/#setup) to install
-  the bash shell with git, and Python with Anaconda.  
-  Alternatively, use [cygwin](http://www.cygwin.com)
+  the bash shell with git, and Python with Anaconda.
+  Also install [Rtools](https://github.com/stan-dev/rstan/wiki/Install-Rtools-for-Windows),
+  which will provide key utilities like GNU "make" and "gcc".
+
+    Alternatively, use [cygwin](http://www.cygwin.com)
   or install a desktop virtual machine like
   [Virtual Box VM](https://www.virtualbox.org/wiki/Downloads),
   but these don't work with git as well.

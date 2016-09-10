@@ -8,6 +8,11 @@ description: notes, links, example code, exercises
 
 - email me if you want to be added to the course mailing list
   (auditors)
+- starting next Thursday (9/15), we will meet in
+  133 [SMI](http://map.wisc.edu/s/dc3243ls), in which it's easier to move
+  chairs & tables arounds, and tables are larger.
+- do things on your own laptop: watching the screen is insufficient
+  to get good at this
 
 ## intro to the shell (con't)
 
@@ -49,6 +54,26 @@ rm outfile errfile
 ls -d * unknownfile &> outerrfile
 cat outerrfile
 rm outerrfile
+```
+
+### more on redirection
+
+What would `2>>` do?
+
+all open file have a "file descriptor".
+- standard input: 0, standard output: 1, standard error: 2.
+- `>` does the same as `1>`
+
+How could `tail -f` (follow) be useful to check status
+of a program that takes a week to finish?
+
+What if a program generates a whole lot of "standard output"
+to the screen, which we are not interested in?
+(interesting output might go to a file)? We can redirect the
+screen output (STDOUT) to a "fake" disk `/dev/null` (black hole):
+
+```shell
+$ myprogram > /dev/null
 ```
 
 ## file names
@@ -135,6 +160,21 @@ some commands for `less` (there are many more!):
 - take a [test](http://www.typingtest.com/test.html)
 - invest in your typing skills! it will save you time and stress.  
   allow yourself one week to be slow.
+
+## homework
+
+- create a [github](https://github.com) account: done?
+- request a "student developer pack" [here](https://education.github.com/pack),
+  which includes unlimited free repositories on github.  
+  Click on "get your pack", then follow instructions.
+  To the question "How do you plan to use "GitHub", you can say
+  "for research" (my hope is that you will continue to use github for
+  analyses in your dissertation), or "for learning computational tools",
+  or some other appropriate description.
+- email me your github username, so that I can add you to the
+  github organization for the course:
+  [UWMadison-computingtools](https://github.com/UWMadison-computingtools)
+
 
 
 ---
