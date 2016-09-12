@@ -60,12 +60,18 @@ rm outerrfile
 
 What would `2>>` do?
 
-all open file have a "file descriptor".
-- standard input: 0, standard output: 1, standard error: 2.
+each open file has a "file descriptor"
+
+- standard input: 0, standard output: 1, standard error: 2
 - `>` does the same as `1>`
 
-How could `tail -f` (follow) be useful to check status
-of a program that takes a week to finish?
+How could `tail -f` (f=follow) be useful to check status
+of a program that takes very long to finish? example:
+
+```shell
+cd ~/Documents/private/st679/coursedata/ex-mrbayes
+mb mrBayes-run.nex
+```
 
 What if a program generates a whole lot of "standard output"
 to the screen, which we are not interested in?
@@ -73,7 +79,7 @@ to the screen, which we are not interested in?
 screen output (STDOUT) to a "fake" disk `/dev/null` (black hole):
 
 ```shell
-$ myprogram > /dev/null
+myprogram > /dev/null
 ```
 
 ## file names
@@ -136,9 +142,9 @@ some commands for `less` (there are many more!):
 | q     | quit             |
 | enter | show next line   |
 | space | show next "page" |
-| d     | show next half-page |
+| d     | down next half-page |
 | b     | back one page |
-| y     | back one line |
+| y     | back (yp?) one line |
 | g or < | go to first line. 4g or 4G: go to 4th line |
 | G or > | Go to last line   |
 | /pattern | search forward  |
