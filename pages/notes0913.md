@@ -14,6 +14,26 @@ description: notes, links, example code, exercises
 - do things on your own laptop: watching the screen is insufficient
   to get good at this
 
+## homework
+
+- create a [github](https://github.com) account: done?
+  [This](http://happygitwithr.com/github-acct.html) is a great resource.
+
+- request a "student developer pack" [here](https://education.github.com/pack),
+  which includes unlimited free repositories on github.
+
+  Click on "get your pack", then follow instructions.
+  To the question "How do you plan to use "GitHub", you can say
+  "for research" (my hope is that you will continue to use github for
+  analyses in your dissertation), or "for learning computational tools",
+  or some other appropriate description.
+
+- email me your github username, so that I can add you to the
+  github organization for the course:
+  [UWMadison-computingtools](https://github.com/UWMadison-computingtools)
+
+- [set-up git](git.html) and download the homework data
+
 ## intro to the shell (con't)
 
 We will continue with "Working with Files and Directories" from the
@@ -166,22 +186,6 @@ some commands for `less` (there are many more!):
 - take a [test](http://www.typingtest.com/test.html)
 - invest in your typing skills! it will save you time and stress.  
   allow yourself one week to be slow.
-
-## homework
-
-- create a [github](https://github.com) account: done?
-- request a "student developer pack" [here](https://education.github.com/pack),
-  which includes unlimited free repositories on github.  
-  Click on "get your pack", then follow instructions.
-  To the question "How do you plan to use "GitHub", you can say
-  "for research" (my hope is that you will continue to use github for
-  analyses in your dissertation), or "for learning computational tools",
-  or some other appropriate description.
-- email me your github username, so that I can add you to the
-  github organization for the course:
-  [UWMadison-computingtools](https://github.com/UWMadison-computingtools)
-
-
 
 ---
 [previous](notes0908.html) & [next](notes0915.html)

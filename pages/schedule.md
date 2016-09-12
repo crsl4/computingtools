@@ -18,46 +18,21 @@ jump to: <!--: [next class](#tue-96) details or -->
 - expectations?
 - logistics
 - best practices
-- introduction to the Unix shell
 
 #### [Thu 9/8](notes0908.html)
+
+- introduction to the Unix shell
+
+#### [Tue 9/13](notes0913.html)
 
 - intro to the Unix shell, con't
 - file names
 - text editor
 - typing skills
+- homework: get started with [git](git.html)
+  and get homework data from [here](https://github.com/UWMadison-computingtools/coursedata//tree/master/hw1-snaqTimeTests)
 
-<!--
----
 
-#### Tue 9/13 - Thu 9/15
-
-#### Tue 9/20 - Thu 9/22
-
-#### Tue 9/27 - Thu 9/29
-
-#### Tue 10/4 - Thu 10/6
-
-#### Tue 10/11 - Thu 10/13
-
-#### Tue 10/18 - Thu 10/20
-
-#### Tue 10/25 - Thu 10/27
-
-#### Tue 11/1 - Thu 11/3
-
-#### Tue 11/8 - Thu 11/10
-
-#### Tue 11/15 - Thu 11/17
-
-#### Tue 11/22 - Thu 11/24: no class (Thanksgiving)
-
-#### Tue 11/29 - Thu 12/1
-
-#### Tue 12/6 - Thu 12/8
-
-#### Tue 12/13 - Thu 12/15
--->
 
 --------
 
@@ -67,8 +42,8 @@ jump to: <!--: [next class](#tue-96) details or -->
 
 | week    | topic |
 |:--------|:------|
-| 9/6-8   | shell: files, pipes, processes |
-| 9/13-15 | regular expressions, grep, sed |
+| 9/6-8   | best practices, intro to the shell |
+| 9/13-15 | files, pipes, processes, regular expressions, grep, sed |
 | 9/20-22 | ssh, tmux, git |
 | 9/27-29 | perl, recall/apply best practices |
 | 10/4-6  | perl for a simulation study |
