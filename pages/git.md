@@ -71,6 +71,7 @@ you will want to "push" this work to github. To avoid having to type
 your github password over and over, we will use "ssh keys".
 The steps below follow the github
 [help](https://help.github.com/articles/generating-an-ssh-key/) on ssh keys.
+Lots of details on the process [here](http://happygitwithr.com/ssh-keys.html) too.
 
 
 1. check to see if you already generated a key pair earlier, in your hidden
@@ -121,3 +122,8 @@ you can see it easily in a browser. To get it on your laptop:
 
     You should see a new directory `coursedata`. Do `ls` to check and
   `ls coursedata` to see what's in there.
+- follow the instructions in the coursedata
+  [readme.md](https://github.com/UWMadison-computingtools/coursedata/blob/master/readme.md)
+  to set up a git repository to submit your homework. You should have downloaded
+  this readme.md file along with the data, so take a look at it to
+  get examples of the markdown format.

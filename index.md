@@ -15,7 +15,7 @@ description: course website, UW-Madison, Statistics 679
 
 Course Material
 
-- [Schedule](pages/schedule.html)
+- [Schedule and Notes](pages/schedule.html)
 - [Data](pages/data.html)
 
 Resources
