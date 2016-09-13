@@ -34,73 +34,13 @@ description: notes, links, example code, exercises
 
 - [set-up git](git.html) and download the homework data
 
+- finish the section "Working with Files and Directories" that we covered today.
+
 ## intro to the shell (con't)
 
-We will continue with "Working with Files and Directories" from the
+We went over "Working with Files and Directories" from the
 [software carpentry introduction](http://swcarpentry.github.io/shell-novice/).
 Summary of commands [here](notes0908.html).
-
-- wild cards:
-  - `*` matches zero or more characters (anything).
-  - `?` matches exactly 1 characters
-
-  the shell expands the wild cards *before* running the command.
-- pipes and redirection:  
- `>` to redirect the output of one command to a file  
- `|` pipes the output of one command to the input of another command: pipeline!
-  very fast: uses streams only.  
- `>>` redirects output and appends to a file  
- `2>` redirects standard error  
- `&>` redirects both output and error (bash shell)
-
-```shell
-ls -d * unknownfile
-```
-What is this command doing?  
-It gives both some output, and some error.
-Let's try to capture the output and the error separately.
-
-```shell
-ls -d * unknownfile > outfile
-cat outfile
-rm outfile
-ls -d * unknownfile 2> errfile
-cat errfile
-rm errfile
-ls -d * unknownfile > outfile 2> errfile
-cat outfile
-cat errfile
-rm outfile errfile
-ls -d * unknownfile &> outerrfile
-cat outerrfile
-rm outerrfile
-```
-
-### more on redirection
-
-What would `2>>` do?
-
-each open file has a "file descriptor"
-
-- standard input: 0, standard output: 1, standard error: 2
-- `>` does the same as `1>`
-
-How could `tail -f` (f=follow) be useful to check status
-of a program that takes very long to finish? example:
-
-```shell
-cd ~/Documents/private/st679/coursedata/ex-mrbayes
-mb mrBayes-run.nex
-```
-
-What if a program generates a whole lot of "standard output"
-to the screen, which we are not interested in?
-(interesting output might go to a file)? We can redirect the
-screen output (STDOUT) to a "fake" disk `/dev/null` (black hole):
-
-```shell
-myprogram > /dev/null
-```
 
 ## file names
 
@@ -144,40 +84,6 @@ how can we remove this directory?
 ## text editor
 
 - see [here](notes0906.html#text-editor)
-
-## less and man
-
-- `man ls` to get help on `ls`
-- other very standard option: `--help`
-- the result of `man` is actually passed on to the "viewer" `less`
-- try `more` on a long file: shows more and more, one page at a time
-- `less` is similar, but much better. Name from "less is more".
-  Power of text streams: can read very long files without having
-  to load the whole thing in memory.
-
-some commands for `less` (there are many more!):
-
-|       |    |
-|:------|:---|
-| q     | quit             |
-| enter | show next line   |
-| space | show next "page" |
-| d     | down next half-page |
-| b     | back one page |
-| y     | back (yp?) one line |
-| g or < | go to first line. 4g or 4G: go to 4th line |
-| G or > | Go to last line   |
-| /pattern | search forward  |
-| ?pattern | search backward |
-| n        | next: repeat previous search |
-|----------|------------|
-|         |   |
-{: rules="groups"}
-
-- use these commands for `less` to search a manual page and
-  navigate fast between the top, bottom, marked positions,
-  and searched keywords: `man less`
-- how to search for anything that does *not* match a pattern?
 
 ## typing skills
 

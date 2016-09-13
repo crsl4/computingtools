@@ -32,6 +32,12 @@ jump to: <!--: [next class](#tue-96) details or -->
 - homework: get started with [git](git.html)
   and get homework data from [here](https://github.com/UWMadison-computingtools/coursedata//tree/master/hw1-snaqTimeTests)
 
+#### [Tue 9/15](notes0915.html)
+
+- intro to the Unix shell, con't
+- less, redirection, loops with the shell
+- grep and find
+- wild cards and intro to regular expressions
 
 
 --------
