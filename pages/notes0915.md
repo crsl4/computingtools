@@ -4,8 +4,9 @@ title: 9/15 notes
 description: notes, links, example code, exercises
 ---
 
-## homework
+## logistics & homework
 
+- room change: 133 [SMI](http://map.wisc.edu/s/dc3243ls)
 - set up your homework/project folder as a git repository:
   [instructions](https://github.com/UWMadison-computingtools/coursedata)
 - do exercise 1 of [homework 1](https://github.com/UWMadison-computingtools/coursedata/tree/master/hw1-snaqTimeTests).

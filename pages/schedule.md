@@ -5,7 +5,7 @@ description: topic, assignments, notes, for each class period
 ---
 
 Will get updated each week, refresh your browser!  
-**class**: 2:30-3:45 in 120 Ingraham  
+**class**: 2:30-3:45 in ~~120 Ingraham~~ 133 [SMI](http://map.wisc.edu/s/dc3243ls)  
 **office hours**: T 11-noon & W 12:30-2pm, 1208 Medical Sciences Center  
 jump to: <!--: [next class](#tue-96) details or -->
 [overview](#overview-of-topic-coverage) of topic coverage
@@ -34,6 +34,7 @@ jump to: <!--: [next class](#tue-96) details or -->
 
 #### [Tue 9/15](notes0915.html)
 
+- room change: 133 [SMI](http://map.wisc.edu/s/dc3243ls)
 - intro to the Unix shell, con't
 - less, redirection, loops with the shell
 - grep and find
