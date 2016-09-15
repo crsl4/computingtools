@@ -32,13 +32,16 @@ jump to: <!--: [next class](#tue-96) details or -->
 - homework: get started with [git](git.html)
   and get homework data from [here](https://github.com/UWMadison-computingtools/coursedata//tree/master/hw1-snaqTimeTests)
 
-#### [Tue 9/15](notes0915.html)
+#### [Thu 9/15](notes0915.html)
 
 - room change: 133 [SMI](http://map.wisc.edu/s/dc3243ls)
 - intro to the Unix shell, con't
-- less, redirection, loops with the shell
+- wild cards, redirection, loops with the shell
+
+#### [Tue 9/20](notes0920.html)
+
 - grep and find
-- wild cards and intro to regular expressions
+- intro to regular expressions
 
 
 --------

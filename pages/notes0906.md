@@ -193,7 +193,7 @@ List of estimated networks for all runs:
 ```
 
 each analysis also had a log file, e.g.
-`TestResults/out files/timetest1_snaq.log`
+`TestResults/log files/timetest1_snaq.log`
 <!-- https://github.com/frupaul/Test-for-SNAQ-by-Reduced-Data-Sample/-->
 which starts like this:
 
