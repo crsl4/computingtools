@@ -40,9 +40,21 @@ jump to: <!--: [next class](#tue-96) details or -->
 
 #### [Tue 9/20](notes0920.html)
 
-- grep and find
-- intro to regular expressions
+- processes, redirecting standard error, background processes
+- viewing with less
+- grep, intro to regular expressions
 
+#### [Thu 9/22](notes0922.html)
+
+- more on grep, find
+- command substitution
+- set-up and organization of an analysis project
+- markdown format
+
+#### [Thu 9/27](notes0927.html)
+
+- git
+- sed
 
 --------
 
@@ -53,11 +65,11 @@ jump to: <!--: [next class](#tue-96) details or -->
 | week    | topic |
 |:--------|:------|
 | 9/6-8   | best practices, intro to the shell |
-| 9/13-15 | files, pipes, processes, regular expressions, grep, sed |
-| 9/20-22 | ssh, tmux, git |
-| 9/27-29 | perl, recall/apply best practices |
+| 9/13-15 | files, pipes, shell loops |
+| 9/20-22 | processes, regular expressions, grep, recall/apply best practices, markdown |
+| 9/27-29 | git, sed, ssh, tmux |
 | 10/4-6  | perl for a simulation study |
-| 10/11-13| intro to python, object-oriented programming |
+| 10/11-13| intro to python |
 | 10/18-20| python (con't)  |
 | 10/25-27| intro to julia, just-in-time compiled |
 | 11/1-3  | julia (con't)   |
