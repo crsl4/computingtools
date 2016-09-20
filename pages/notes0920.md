@@ -121,7 +121,8 @@ Some options for `grep`:
 `-w` for whole words  
 `-v` to in**v**ert the search  
 `-o` to get the match only  
-`-E` to use Extended (not basic) regular expressions
+`-E` to use Extended (not basic) regular expressions,
+`-P` for Perl-like regular expressions (GNU only)
 
 exercise: find the option to get the matched pattern to be colorized.
 
@@ -129,24 +130,61 @@ Some options for `find`:
 `-type` with `d` or `f` for directory / file  
 `-name` with a regular expression (say `'*.pdf'`)  
 `-d` for depth (e.g. `-d 1` or `-d +1` or `-d -1`)  
-`-mtime` for modified time  
+`-mtime` for modified time
 
-## regular expressions
+## GNU vs BSD command-line tools
 
-We need a whole class period on this!
+Mac users: you have BSD tools (do `man grep` for instance, or `grep --version`).
+They differ slightly from the GNU tools, which are generally better.
+Install the GNU tools with [homebrew](http://brew.sh):
+
+```shell
+brew install coreutils # basic tools like ls, cat etc.
+brew tap homebrew/dupes
+brew install grep      # to get GNU grep, not included in basic tools
+brew install gnu-sed   # to get GNU sed, also not included in basic
+```
+
+then use `gcat` instead of `cat`, `ggrep` instead of `grep` etc.
+
+<!--
+`brew --prefix coreutils` showed me `/usr/local/opt/coreutils`
+in which there was `bin/` with all the "g" tools. I then checked to see if
+this directory was in my PATH variable: `echo $PATH`. It wasn't. but gcat and gecho worked.
+ggrep and gsed were not there.
+-->
+
+## regular expressions: "regexp"
+
+We need lots of practice on this!
+For help: `man re_format`,
+get an explanation of your expression (and debug it)
+on [regexp101](https://regex101.com) or [debuggex](https://www.debuggex.com)
+
 <!-- http://v4.software-carpentry.org -->
-Just a few things here:
 
 |    |    |
 |:---|:---|
 |`.` | any one character |
-|`^` | beginning of line |
-|`$` | end of line |
+|`^` | beginning of line (only if placed first)|
+|`$` | end of line (only if placed last)|
+|`\` | turns off special meaning of next symbol |
 |`[aBc]` | anything in: a or B or c |
 |`[^aBc]`| anything but: a, B, c |
+|`\w` | any word character: letter, number, or "_". also `[[:alnum:]_]`. opposite: `\W`|
+|`\d` | any single digit. also `[[:digit:]]`. opposite: `\D` |
+|`\s` | any white space character: single space, `\t` (tab), `\n` (life feed) or `\r` (carriage return). also `[[:space:]]`. opposite: `\S` |
+|`\b` | word boundary (null string). also `\<` and `\>` for start/end boundaries. opposite: `\B` |
+|`+` | one or more of the previous |
+|`?` | zero or one of the previous |
+|`*` | zero or more of the previous |
+|`{4}`| 4 of the previous |
+|`{4,6}`| 4 or 6 of the previous |
+|`{4,}`| 4 or more of the previous |
 |--------|------------|
 |        |            |
 {: rules="groups"}
+
 
 <!-- from Bioinformatics Data Skills, Chapter 2 (ideas) and
      Chapter 6 (example) -->
@@ -187,7 +225,7 @@ GGCTTTTGCTAGGTAAAAGTCTAGCTCACAAGGTCAATTCCATGATGCCGTTTGTATGCATGTTAAAATC
 TGCACCTAATGGCGCGGCTTTATATAGTCTTATAATTCATGGATCAAACATGCCGATC
 ```
 Hint: first exclude non-nucleotide lines, then (pipe) find lines with
-anything other than A, C, G or T.
+anything other than A, C, G or T (and other than a, c, g, t).
 
 <!--
 ```shell
@@ -195,6 +233,36 @@ grep -v "^>" tb1.fasta | grep --color -i "[^ATCG]"
 ```
 Y is for pYrimidine bases: C or T.
 -->
+
+beginning/end of lines, and escaping special characters:
+
+```shell
+echo abc a g ef$ g
+echo abc a g ef$ g | grep "a" -o    # 2 matches
+echo abc a g ef$ g | grep "^a" -o   # 1 match only: last one
+echo abc a g ef$ g | grep "g" -o    # 2 matches
+echo abc a g ef$ g | grep "g$" -o   # 1 match
+echo abc a g ef$ g | grep "f$" -o   # no match
+echo abc a g ef$ g | grep "f\$" -o  # match
+echo ^abc a g ef$ g | grep "$ " -o  # match
+echo ^abc a g ef$ g | grep "^a" -o  # no match
+echo ^abc a g ef$ g | grep "\^a" -o # match
+echo ^abc a g ef$ g | grep "^^a" -o # match
+```
+
+What would `grep "^$" filename` do? How about
+
+dot, words, digits:
+
+```shell
+cd ../../coursedata/hw1-snaqTimeTests
+cat out/timetest9_snaq.out
+grep "Elapsed time" out/timetest9_snaq.out #  Elapsed time: 34831.465925074 seconds in 10 successful runs
+grep "Elapsed time." -o out/timetest9_snaq.out # . matches any one character
+grep "Elapsed time. \d+" -o out/timetest9_snaq.out # no match: need Extended regexp
+grep -E "Elapsed time. \d+" -o out/timetest9_snaq.out # \d = digit, +: one or more
+grep -E "Elapsed time. \d+\.\d" -o out/timetest9_snaq.out # need to escape the dot to match "."
+```
 
 
 ---
