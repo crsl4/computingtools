@@ -3,6 +3,9 @@ layout: page
 title: 9/8 notes
 description: notes, links, example code, exercises
 ---
+[previous](notes0906.html) & [next](notes0913.html)
+
+---
 
 ## the Unix shell
 

@@ -3,6 +3,9 @@ layout: page
 title: 9/15 notes
 description: notes, links, example code, exercises
 ---
+[previous](notes0913.html) & [next](notes0920.html)
+
+---
 
 ## logistics & homework
 

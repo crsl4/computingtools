@@ -4,6 +4,10 @@ title: 9/20 notes
 description: notes, links, example code, exercises
 ---
 
+[previous](notes0915.html) & [next](notes0922.html)
+
+---
+
 ## homework
 
 - for Thursday:

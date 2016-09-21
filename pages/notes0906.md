@@ -3,6 +3,9 @@ layout: page
 title: 9/6 notes
 description: notes, links, example code and exercises
 ---
+[next](notes0908.html)
+
+---
 
 ### survey:
 

@@ -4,6 +4,10 @@ title: 9/22 notes
 description: notes, links, example code, exercises
 ---
 
+[previous](notes0920.html) & [next](notes0927.html)
+
+---
+
 ## homework
 
 - did you do the exercises to [practice grep](#more-practice-with-grep)?
