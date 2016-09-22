@@ -13,12 +13,16 @@ description: notes, links, example code, exercises
 - did you do the exercises to [practice grep](#more-practice-with-grep)?
 - for Tuesday next week: do exercise 2 of [homework 1](https://github.com/UWMadison-computingtools/coursedata/tree/master/hw1-snaqTimeTests)  
   document your new work in your readme file, save your work
+- finish the exercises from the "finding things"
+  [software carpentry](http://swcarpentry.github.io/shell-novice/07-find/)
+  section, except for "tracking a species" (we need to learn more about
+  shell scripts for this).
 
 ---
 
-We will continue the
+We did the
 [sorftware carpentry](http://swcarpentry.github.io/shell-novice/07-find/)
-section on finding things.
+section on finding things, except for the exercises (to do at home).
 
 Note about no quotes, double quotes and single quotes,
 to control how much the shell should expand/interpret:
@@ -51,6 +55,15 @@ grep "and" filename
 echo "orchestra and band" | grep "and" # to search a string, not a file
 grep -w "and" *
 find . -type d
+```
+
+examples using a pipe and `xargs` instead of command substitution:
+(try from the "writing" directory in software carpentry data folder)
+
+```shell
+wc -l $(find . -name '*.txt')
+find . -name '*.txt' | xargs wc -l # xargs runs "wc -l xxx" where xxx = input (from find) as arguments to wc
+find . -name '*.txt' | xargs -n 1 wc -l # to analyze each file with wc one at a time, parallelized
 ```
 
 Some options for `grep`:  
@@ -193,7 +206,7 @@ echo ^abc a g ef$ g | grep --color '\^a' # match
 echo ^abc a g ef$ g | grep --color '^^a' # match
 ```
 
-What would `grep '^$ filename` do?  
+What would `grep '^$' filename` do?  
 How to match lines with white spaces only?
 
 dot, words, digits:

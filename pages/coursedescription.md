@@ -49,7 +49,7 @@ tools and topics
 - the shell: power of command lines to interact with a machine
 - version control and collaboration: git and [GitHub](https://github.com)
 - [best practices for scientific computing](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745)
-- scripting: Perl and Python
+- scripting: Bash and Python primarily
 - learning a programming language: [Julia](http://julialang.org)
 
 hardware requirements
