@@ -51,10 +51,20 @@ jump to: <!--: [next class](#tue-96) details or -->
 - set-up and organization of an analysis project
 - markdown format
 
-#### [Thu 9/27](notes0927.html)
+#### [Tue 9/27](notes0927.html)
 
-- git
-- sed
+- questions from homework 1
+- git: commits, staging area, working directory,
+  what to track, fixing mistakes
+
+#### [Thu 9/29](notes0929.html)
+
+- git: push, pull to/from github, merge, branches,
+  checking out old versions, sha checksums
+
+#### [Tue 10/04](notes1004.html)
+
+- more shell tools: sed
 
 --------
 
