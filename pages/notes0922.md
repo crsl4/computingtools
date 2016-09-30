@@ -120,10 +120,10 @@ on [regexp101](https://regex101.com) or [debuggex](https://www.debuggex.com)
 |`^` | beginning of line (only if placed first)|
 |`$` | end of line (only if placed last)|
 |`\` | turns off special meaning of next symbol |
-|`[aBc]` | anything in: a or B or c |
+|`[aBc]` | anything in: a or B or c. Ranges: like `[0-9]`, `[a-z]`, `[a-zA-Z]` |
 |`[^aBc]`| anything but: a, B, c |
 |`\w` | any word character: letter, number, or "_". also `[[:alnum:]_]`. opposite: `\W`|
-|`\d` | any single digit. also `[[:digit:]]`. opposite: `\D` |
+|`\d` | any single digit. also `[[:digit:]]` or `[0-9]`. opposite: `\D` |
 |`\s` | any white space character: single space, `\t` (tab), `\n` (life feed) or `\r` (carriage return). also `[[:space:]]`. opposite: `\S` |
 |`\b` | word boundary (null string). also `\<` and `\>` for start/end boundaries. opposite: `\B` |
 |`+` | one or more of the previous |

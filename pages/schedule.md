@@ -59,12 +59,15 @@ jump to: <!--: [next class](#tue-96) details or -->
 
 #### [Thu 9/29](notes0929.html)
 
-- git: push, pull to/from github, merge, branches,
-  checking out old versions, sha checksums
+- git: push, pull to/from github, merge
 
 #### [Tue 10/04](notes1004.html)
 
-- more shell tools: sed
+- more shell tools: sed, bash scripts
+
+#### [Thu 10/6](notes1006.html)
+
+- git: checking out old versions, branches, sha checksums
 
 --------
 
@@ -77,8 +80,8 @@ jump to: <!--: [next class](#tue-96) details or -->
 | 9/6-8   | best practices, intro to the shell |
 | 9/13-15 | files, pipes, shell loops |
 | 9/20-22 | processes, regular expressions, grep, recall/apply best practices, markdown |
-| 9/27-29 | git, sed, ssh, tmux |
-| 10/4-6  | perl for a simulation study |
+| 9/27-29 | git |
+| 10/4-6  | git (cont), sed, ssh, tmux |
 | 10/11-13| intro to python |
 | 10/18-20| python (con't)  |
 | 10/25-27| intro to julia, just-in-time compiled |
