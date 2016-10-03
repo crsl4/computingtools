@@ -9,7 +9,11 @@ description: course notes
 
 ## homework
 
-due Tuesday next week 10/11: do and [submit](https://github.com/UWMadison-computingtools/coursedata#commit-push-and-submit-your-work)
+- do ["tracking a species"](http://swcarpentry.github.io/shell-novice/07-find/#tracking-a-species)
+from the software carpentry workshop: combines `grep`, `cut`, pipes
+and script arguments usage.
+
+- due Tuesday next week 10/11: do and [submit](https://github.com/UWMadison-computingtools/coursedata#commit-push-and-submit-your-work)
 exercise 3 from [homework 1](https://github.com/UWMadison-computingtools/coursedata/tree/master/hw1-snaqTimeTests).
 The goal of this exercise is to write a shell script with
 search/replace components, with a loop
@@ -384,11 +388,6 @@ then
 fi
 (head -n $nl; tail -n $nl) < "$1"
 ```
-
-### exercise: do
-["tracking a species"](http://swcarpentry.github.io/shell-novice/07-find/#tracking-a-species)
-from the software carpentry workshop: combines `grep`, `cut`, pipes
-and script arguments usage.
 
 ---
 [previous](notes0929.html) & [next](notes1006.html)
