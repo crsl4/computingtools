@@ -185,5 +185,14 @@ fi
 (head -n $nl; tail -n $nl) < "$1"
 ```
 
+and now use our script with (or without) its new option:
+
+```shell
+headtail.sh Mus_musculus.GRCm38.75_chr1.bed 5 | column -t
+headtail.sh Mus_musculus.GRCm38.75_chr1.bed   | column -t
+```
+
+<!-- add something about bash arrays? -->
+
 ---
 [previous](notes1004.html) & [next](notes1011.html)
