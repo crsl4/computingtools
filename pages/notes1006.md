@@ -194,5 +194,25 @@ headtail.sh Mus_musculus.GRCm38.75_chr1.bed   | column -t
 
 <!-- add something about bash arrays? -->
 
+## changing your shell prompt
+
+variable PS1 contains your shell prompt (prompt string):
+
+```shell
+echo $PS1 # save this output, to go back to original prompt in same session
+PS1="hiCecile% "
+PS1="hiCecile$ "
+PS1="$ "
+PS1="\$(parse_git_branch)$ "
+PS1="\[\033[33m\]\$(parse_git_branch)$ "
+PS1="\[\033[33m\]\$(parse_git_branch)\[\033[00m\]$ "
+```
+
+last one: shows if in git repository, and if so,
+name of current checked out branch  
+to affect future sessions: pick the one you like best and add this at
+the end of your `~/.bash_profile` file:
+`export PS1=preferred_choice_here`
+
 ---
 [previous](notes1004.html) & [next](notes1011.html)

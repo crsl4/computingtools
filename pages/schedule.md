@@ -19,13 +19,14 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 - homework 1.3 due
 - git: checking out old versions, branches
-- sha checksums, git-aware prompt
+- sha checksums
 
 #### [Thu 10/6](notes1006.html)
 
 - do ["tracking a species"](http://swcarpentry.github.io/shell-novice/07-find/#tracking-a-species)
 (from 10/4)
 - shell scripts: safe options, using arguments
+- git-aware prompt
 
 #### [Tue 10/4](notes1004.html)
 
