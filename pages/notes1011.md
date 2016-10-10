@@ -9,7 +9,8 @@ description: course notes
 
 ## homework
 
-due today: exercise 3 from [homework 1](https://github.com/UWMadison-computingtools/coursedata/tree/master/hw1-snaqTimeTests).
+due today: exercise 3 from [homework 1](https://github.com/UWMadison-computingtools/coursedata/tree/master/hw1-snaqTimeTests).  
+15 minutes Q&A on this homework: bring your questions to get help/feedback from your peers.
 
 ## Git: continued
 
@@ -20,9 +21,18 @@ due today: exercise 3 from [homework 1](https://github.com/UWMadison-computingto
 - [sha checksums](#sha-checksums)
 - a git-aware [shell-prompt](notes1006.html#changing-your-shell-prompt)
 
+### warnings
+
+- do **not** update your github repository by uploading files from the browser: this creates commits that are not on your local laptop repository. If you make changes from the browser, you will have to do a `git pull` the next time you work on your laptop, to pull the changes from github into your local repo.
+
+- git desktop does not always let you control and see everything: prefer the command line, understand things under the hood.
+
+- do not track/commit `.Rhistory` files, or `.DS_Store` files, or temporary files. Be in control of what you track and what you commit.
+
 ### checking out older versions
 
-Let's recover some old version now, then go back to latest committed version:
+Let's recover some old version now, *just for one file*,
+then go back to latest committed version:
 
 ```shell
 git log --graph # copy-paste the SHA from just before divergence
@@ -33,6 +43,29 @@ git log --graph --abbrev-commit --pretty=oneline
 git checkout -- readme.md # back to version from HEAD (default)
 ```
 
+To recover some old version for the *whole* project:
+`git checkout commit-sha` or `git checkout tag-name`.
+Then come back to the latest version on the "master" branch with `git checkout master`.
+Example (do this on your own homework repo):
+
+```shell
+cd ../studenthw/coraAllenColeman/homework/hw1/hw1-snaqTimeTests/
+less summarizeSNaQres.sh # using "basename": for exercise 3
+git log --graph --oneline --all --decorate
+git checkout v1.2 # tag "v1.2" placed at commit 7507dd0. "detached HEAD"
+git log --graph --oneline --all --decorate # HEAD not pointing to any branch
+less summarizeSNaQres.sh # not using "basename"
+git checkout 9a21e1f # or full sha: 9a21e1fac871804d5fd8918a7d3ce77cc24153be
+git show
+git log --graph --oneline --all --decorate
+git checkout master # back to latest statements
+git log --graph --oneline --all --decorate # HEAD re-attached to a branch
+```
+
+On github: easy to browse a project at any old version,
+really easy at tagged versions:
+[example](https://github.com/BaconZhou/stat679work/tree/master/hw1)
+
 ### branches
 
 Branches are very useful to easily switch back and forth between different
@@ -42,6 +75,8 @@ Imagine that I want to develop a new aspect of the project, not ready to
 work with the rest of the pipeline --say risky edits to the `readme` file (!):
 
 ```shell
+cd ~/Documents/private/st679/zmays-snps/
+git pull origin master # pull often! Perhaps Rebecca did some cool work.
 git branch readme-changes # creates a branch
 git branch # lists the existing branches
 git checkout readme-changes # switches the current branch
@@ -54,11 +89,11 @@ then commit my changes:
 
 ```shell
 git commit -a -m "reformatted readme, added sample info"
-git log --abbrev-commit --pretty=oneline --graph -n 5
+git log --oneline --graph -n 5 --all --decorate
 git branch
 git checkout master
-git log --abbrev-commit --pretty=oneline --graph -n 5
-git log --abbrev-commit --pretty=oneline --graph --all --decorate
+git log --oneline --graph -n 5
+git log --oneline --graph --all --decorate
 cat readme.md # old version: on master branch
 echo ">adapter-1\\nGATGATCATTCAGCGACTACGATCG" >> adapters.fa
 git add adapters.fa # add a new file. on master branch here
@@ -76,6 +111,7 @@ and it's ready to be used by my collaborators on the main "master" branch.
 ```shell
 git checkout master
 git branch # to triple-check we are on master
+git pull origin master # pull often! just in case Rebecca did some cool work in the meantime
 git merge readme-changes # no conflict, yes! enter commit message
 git log --abbrev-commit --graph --pretty=oneline --all --decorate
 git push origin master

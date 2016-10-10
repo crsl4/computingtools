@@ -64,9 +64,9 @@ each open file has a "file descriptor"
 - `>` does the same as `1>`
 
 How could `tail -f` (f=follow) be useful to check status
-of a program that takes very long to finish? example (which you cannot
-reproduce on your machine unless you install the
-[mb](http://mrbayes.sourceforge.net/index.php) program):
+of a program that takes very long to finish? example (see
+[here](https://github.com/UWMadison-computingtools/coursedata/tree/master/example-mrbayes)
+to reproduce it):
 
 ```shell
 cd ~/Documents/private/st679/coursedata/ex-mrbayes
