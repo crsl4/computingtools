@@ -37,10 +37,11 @@ then go back to latest committed version:
 ```shell
 git log --graph # copy-paste the SHA from just before divergence
 cat readme.md
-git checkout 7d82504d7dfb3 -- readme.md
+git checkout 7d82504d7dfb3 -- readme.md # changes the file and adds it
 cat readme.md
+git status  # the changes were added to staging area
 git log --graph --abbrev-commit --pretty=oneline
-git checkout -- readme.md # back to version from HEAD (default)
+git checkout master -- readme.md # back to version from master
 ```
 
 To recover some old version for the *whole* project:

@@ -15,6 +15,11 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 <p></p>
 
+#### [Thu 10/13](notes1013.html)
+
+- awk, parameter expansion
+- curl, wget, scp, ssh
+
 #### [Tue 10/11](notes1011.html)
 
 - homework 1.3 due
@@ -96,7 +101,7 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 | 9/20-22 | processes, regular expressions, grep, recall/apply best practices, markdown |
 | 9/27-29 | git |
 | 10/4-6  | sed, cut/sort/column, shell scripts |
-| 10/11-13| git (cont), ssh, tmux, curl/wget |
+| 10/11-13| git (cont), awk, curl/wget, ssh, tmux |
 | 10/18-20| intro to python  |
 | 10/25-27| intro to julia, just-in-time compiled |
 | 11/1-3  | julia (con't)   |
