@@ -12,7 +12,7 @@ description: course notes
 due T 10/4: submit your solution to exercises 1 & 2 of homework 1
 using git and github: see
 [submission instructions](https://github.com/UWMadison-computingtools/coursedata#commit-push-and-submit-your-work).
-Also see the [grading rubric](https://github.com/UWMadison-computingtools/coursedata#grading-rubric). Make sure
+Also see the [grading rubric](https://github.com/UWMadison-computingtools/coursedata/blob/master/rubric.md). Make sure
 
 - your code is annotated with comments in the scripts
 - you have readme files to give higher-level explanations and all

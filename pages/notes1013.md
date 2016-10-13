@@ -7,8 +7,17 @@ description: course notes
 
 ---
 
-<!-- ## homework -->
+## homework
 
+- review the solution of exercise 3 for 2 of your peers:
+  * provide constructive feedback for each one via a github issue discussion,
+  * send me marks according the grading [rubric](https://github.com/UWMadison-computingtools/coursedata/blob/master/rubric.md) (dummy example  [here](https://github.com/UWMadison-computingtools/coursedata/blob/master/marktemplate.csv)).
+
+- I will tag both "reviewers" on the github issue.
+  Check your issues [here](https://github.com/issues) and click on the
+  "Mentioned" tab to see the list of issues where you were tagged.
+  You will not see the issue or the code until the owner of the repository
+  has either made his/her repo public or added you as a collaborator.
 
 ## quick text processing: awk
 
@@ -43,7 +52,7 @@ examples:
 ```shell
 awk '{ print $0 }' example.bed # like cat. No pattern: defaults to true
 awk '{ print $2 "\t" $3 }' example.bed # like cut -f2,3
-awk '$3 - $2 > 18' example.bed # prints lines (default action) if end-start position > 18
+awk '$3 - $2 > 18' example.bed # prints lines (default action) if feature length > 18 (bed 0-based)
 awk '$1 ~ /chr1/ && $3 - $2 > 10' example.bed
 awk '$1 ~ /chr2|chr3/ { print $0 "\t" $3 - $2 }' example.bed
 awk 'BEGIN{ s = 0 }; { s += ($3-$2) }; END{ print "mean: " s/NR };' example.bed # mean feature length
