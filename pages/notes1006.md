@@ -203,6 +203,9 @@ echo $PS1 # save this output, to go back to original prompt in same session
 PS1="hiCecile% "
 PS1="hiCecile$ "
 PS1="$ "
+parse_git_branch() { # defines a shell function: run "git branch" and extract branch name
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
 PS1="\$(parse_git_branch)$ "
 PS1="\[\033[33m\]\$(parse_git_branch)$ "
 PS1="\[\033[33m\]\$(parse_git_branch)\[\033[00m\]$ "

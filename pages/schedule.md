@@ -15,10 +15,17 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 <p></p>
 
+#### [Tue 10/18](notes1018.html)
+
+- homework for 10/20: peer reviewing of hw1.3,
+  and install python 3
+- scp, ssh, nohup, tmux (screen), HP vs HT
+
 #### [Thu 10/13](notes1013.html)
 
+- homework for 10/20: peer reviewing of hw1.3
 - awk, parameter expansion
-- curl, wget, scp, ssh
+- curl, wget
 
 #### [Tue 10/11](notes1011.html)
 
@@ -101,8 +108,8 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 | 9/20-22 | processes, regular expressions, grep, recall/apply best practices, markdown |
 | 9/27-29 | git |
 | 10/4-6  | sed, cut/sort/column, shell scripts |
-| 10/11-13| git (cont), awk, curl/wget, ssh, tmux |
-| 10/18-20| intro to python  |
+| 10/11-13| git (cont), awk, curl/wget |
+| 10/18-20| ssh, scp, tmux intro to python  |
 | 10/25-27| intro to julia, just-in-time compiled |
 | 11/1-3  | julia (con't)   |
 | 11/8-10 | midterm project: intro to subject area, get started |
