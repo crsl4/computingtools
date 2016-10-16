@@ -9,7 +9,12 @@ description: course notes
 
 ## homework
 
-For next class: install python 3 (and the [conda](http://conda.pydata.org/)
+Review the solution of exercise 3 for 2 of your peers:
+
+  * provide constructive feedback for each one via a github issue discussion,
+  * by email, send me marks according the grading [rubric](https://github.com/UWMadison-computingtools/coursedata/blob/master/rubric.md) (dummy example  [here](https://github.com/UWMadison-computingtools/coursedata/blob/master/marktemplate.csv)).
+
+Install python 3 (and the [conda](http://conda.pydata.org/)
 package management) if you don't already have it.
 
 - do `which python` and `python --version` to see if you already have python
@@ -29,7 +34,7 @@ package management) if you don't already have it.
   Python 3.5.2 :: Anaconda 4.2.0 (x86_64)
   ```
 
-  If you don't get anything or not a python 3.x version, exit your shell
+  If you don't get anything or not a python 3.x version, exit your shell,
   open it again, and try `python --version` again.
   Also do `conda list` to see what conda installed for you.
 
