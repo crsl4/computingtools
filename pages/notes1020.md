@@ -1,0 +1,92 @@
+---
+layout: page
+title: 10/20 notes
+description: course notes
+---
+[previous](notes1018.html) & [next](notes1025.html)
+
+---
+
+<!-- ## homework -->
+
+
+## introduction to python
+
+We will do "programming with Python" from the [software carpentry workshop](http://swcarpentry.github.io/python-novice-inflammation/).  
+software carpentry's [python reference](http://swcarpentry.github.io/python-novice-inflammation/reference)  
+first goal: basic programming concepts, not much about python itself.
+
+today: basic python interpreter, *not* the notebook
+
+```shell
+$ cd softwarecarpentry-data-python
+$ python
+Python 3.5.2 |Anaconda 4.2.0 (x86_64)| (default, Jul  2 2016, 17:52:12)
+[GCC 4.2.1 Compatible Apple LLVM 4.2 (clang-425.0.28)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1+2
+3
+>>> quit()
+$ head -n 2 inflammation-01.csv
+0,0,1,3,1,2,4,7,8,3,3,3,10,5,7,4,7,7,12,18,6,13,11,11,7,7,4,6,8,8,4,4,5,7,3,4,2,3,0,0
+0,1,2,1,2,1,3,2,2,6,10,11,5,9,4,4,7,16,8,6,18,4,12,5,12,7,11,5,11,3,3,5,4,4,5,5,1,1,0,1
+```
+
+python code:
+
+```python
+import numpy
+numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+weight_kg = 55
+weight_kg
+print(weight_kg)
+print('weight in pounds:', 2.2 * weight_kg)
+weight_kg = 57.5
+print('weight in kilograms is now:', weight_kg)
+weight_lb = 2.2 * weight_kg
+print('weight in kilograms:', weight_kg, 'and in pounds:', weight_lb)
+weight_kg = 100.0
+print('weight in kilograms is now:', weight_kg, 'and weight in pounds is still:', weight_lb)
+%whos
+quit()
+```
+
+last line: does not work with python, requires an "interaction" python
+like ipython (or jupyter notebook/lab later)
+
+```
+ipython
+$ ipython
+Python 3.5.2 |Anaconda 4.2.0 (x86_64)| (default, Jul  2 2016, 17:52:12)
+Type "copyright", "credits" or "license" for more information.
+
+IPython 5.1.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: 1+2
+Out[1]: 3
+
+In [2]: 3*5
+Out[2]: 15
+
+In [3]: quit()
+$
+```
+
+- [row, column]
+- python is 0-indexed (unlike R, but like C, Perl, Java, etc.)  
+  offset from first value (visualize: # steps)  
+  slice 0:4 has 0,1,2,3: 4-0=4 elements. think of it as [0-4[.
+
+[ipython notebook](../assets/iPythonNotebooks/swcarpentry1.ipynb)
+
+<!--
+blog showing lots of features of IPython notebooks: http://arogozhnikov.github.io/2016/09/10/jupyter-features.html?utm_content=bufferb0c6b&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+-->
+
+
+---
+[previous](notes1018.html) & [next](notes1025.html)
