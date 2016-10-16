@@ -18,6 +18,7 @@ Course Material
 - [Schedule and Notes](pages/schedule.html)
 - [Data](pages/data.html)
 - classlist: <stat679-1-f16@lists.wisc.edu>
+- [learn@uw](https://coursedashboard.learnuw.wisc.edu/) for grades
 
 Resources
 

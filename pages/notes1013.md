@@ -11,7 +11,7 @@ description: course notes
 
 - review the solution of exercise 3 for 2 of your peers:
   * provide constructive feedback for each one via a github issue discussion,
-  * send me marks according the grading [rubric](https://github.com/UWMadison-computingtools/coursedata/blob/master/rubric.md) (dummy example  [here](https://github.com/UWMadison-computingtools/coursedata/blob/master/marktemplate.csv)).
+  * by email, send me marks according the grading [rubric](https://github.com/UWMadison-computingtools/coursedata/blob/master/rubric.md) (dummy example  [here](https://github.com/UWMadison-computingtools/coursedata/blob/master/marktemplate.csv)).
 
 - I will tag both "reviewers" on the github issue.
   Check your issues [here](https://github.com/issues) and click on the
