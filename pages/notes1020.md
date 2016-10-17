@@ -81,11 +81,22 @@ $
   offset from first value (visualize: # steps)  
   slice 0:4 has 0,1,2,3: 4-0=4 elements. think of it as [0-4[.
 
-[ipython notebook](../assets/iPythonNotebooks/swcarpentry1.ipynb)
+ipython notebook #1: [download](../assets/iPythonNotebooks/swcarpentry1.ipynb)
+or [view](https://github.com/cecileane/computingtools/blob/gh-pages/assets/iPythonNotebooks/swcarpentry1.ipynb)
 
-<!--
-blog showing lots of features of IPython notebooks: http://arogozhnikov.github.io/2016/09/10/jupyter-features.html?utm_content=bufferb0c6b&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
--->
+To use it:
+
+- save it in a convenient folder, such as in the same folder where
+  you got the software carpentry data for this module
+- from this directory, run: `jupyter notebook`, which will open
+  a browser. Alternatively, install `jupyterlab` like this:
+  `conda install -c conda-forge jupyterlab`, then run jupyter like this:
+  `jupyter lab` (has many more features than the "notebook").
+
+About Jupyter:
+
+- [blog](http://arogozhnikov.github.io/2016/09/10/jupyter-features.html?utm_content=bufferb0c6b&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) showing lots of features of IPython notebooks, like key bindings.
+- can run many many more "kernels" than just Python --like Julia.
 
 
 ---
