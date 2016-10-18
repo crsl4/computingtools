@@ -76,11 +76,6 @@ In [3]: quit()
 $
 ```
 
-- [row, column]
-- python is 0-indexed (unlike R, but like C, Perl, Java, etc.)  
-  offset from first value (visualize: # steps)  
-  slice 0:4 has 0,1,2,3: 4-0=4 elements. think of it as [0-4[.
-
 ipython notebook #1: [download](../assets/iPythonNotebooks/swcarpentry1.ipynb)
 or [view](https://github.com/cecileane/computingtools/blob/gh-pages/assets/iPythonNotebooks/swcarpentry1.ipynb)
 

@@ -15,10 +15,14 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 <p></p>
 
+#### [Thu 10/20](notes1020.html)
+
+- homework: hw1.3 peer review due, install python 3 (and conda)
+- intro to python
+
 #### [Tue 10/18](notes1018.html)
 
-- homework for 10/20: peer reviewing of hw1.3,
-  and install python 3
+- homework for 10/20: install python 3
 - scp, ssh, nohup, tmux (screen), HP vs HT
 
 #### [Thu 10/13](notes1013.html)
@@ -109,9 +113,9 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 | 9/27-29 | git |
 | 10/4-6  | sed, cut/sort/column, shell scripts |
 | 10/11-13| git (cont), awk, curl/wget |
-| 10/18-20| ssh, scp, tmux intro to python  |
-| 10/25-27| intro to julia, just-in-time compiled |
-| 11/1-3  | julia (con't)   |
+| 10/18-20| ssh, scp, tmux, intro to python  |
+| 10/25-27| python |
+| 11/1-3  | intro to julia, just-in-time compiled |
 | 11/8-10 | midterm project: intro to subject area, get started |
 | 11/15-17| project (con't): practice, practice |
 | 11/22   | project (con't): peer review |

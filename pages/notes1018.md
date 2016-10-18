@@ -95,8 +95,8 @@ scp coolfile ane@desk22.stat.wisc.edu:private/ # works both directions
 ```
 
 slight difference between cp and scp:  
-`cp log/ target/path/` copies the *content* of the `log/` directory  
-`cp log  target/path/` copies the directory itself *and* its content
+`cp -r log/ target/path/` copies the *content* of the `log/` directory  
+`cp -r log  target/path/` copies the directory itself *and* its content
 
 ```shell
 rm -rf log/
@@ -182,16 +182,22 @@ do `which tmux` to see if you already have `tmux` installed. if not:
 `sudo apt-get update` then `sudo apt-get install tmux` on Ubuntu.
 
 check your tmux configuration: use this
-[.tmux.conf](https://github.com/vsbuffalo/bds-files/blob/master/chapter-04-working-with-remote-machines/.tmux.conf) file
+[.tmux.conf](https://raw.githubusercontent.com/vsbuffalo/bds-files/master/chapter-04-working-with-remote-machines/.tmux.conf) file
 to change the default prefix to `^a`  
 (to be the same as `screen`, otherwise default is `^b`).
 
 ```shell
-cat ~/.tmux.conf
-emacs ~/.tmux.conf # uncomment the last 2 lines: to split panes more intuitively
+cat ~/.tmux.conf   # if you don't have this file: create it
+emacs ~/.tmux.conf # uncomment last 2 lines
+```
 
+In this file, I suggest that you uncomment the last 2 lines:
+to split panes more intuitively.  
+Now run tmux:
+
+```shell
 tmux new-session -s mb-analysis # new screen shows up
-echo "hi cecile!"
+echo 'hi cecile!'
 pwd
 # ^a d  to detach the session
 tmux list-sessions
@@ -214,7 +220,7 @@ logout # to start new session (lost token)
 tmux new-session -s mb-analysis
 cd private/st679/coursedata/example-mrbayes/
 ls
-rm -f alignedDNA.nex.* screenlog # clean up things that didn't Finish
+rm -f alignedDNA.nex.* screenlog # clean up things that didn't finish
 emacs mrBayes-run.nex # change ngen=1000000 to 5000000
 # ^a c   to create a new window
 pwd # same directory as previous window
