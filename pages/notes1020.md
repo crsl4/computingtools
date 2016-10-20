@@ -12,11 +12,28 @@ description: course notes
 
 ## introduction to python
 
-We will do "programming with Python" from the [software carpentry workshop](http://swcarpentry.github.io/python-novice-inflammation/).  
-software carpentry's [python reference](http://swcarpentry.github.io/python-novice-inflammation/reference)  
+We started "programming with Python" from the [software carpentry workshop](http://swcarpentry.github.io/python-novice-inflammation/),
+and covered the first section ("analyzing patient data") through the
+paragraph "not all functions have input".  
+software carpentry's [python reference](http://swcarpentry.github.io/python-novice-inflammation/reference)
+
 first goal: basic programming concepts, not much about python itself.
 
-today: basic python interpreter, *not* the notebook
+- basic **types**: integers `int` vs. numbers with decimals `float`,
+  and their binary representations
+- **dot** notation: `module.function` or `object.method`  
+  *No dots in variable names!*
+- python is **0-indexed** (unlike R, but like C, Perl, Java).
+  index: offset from first value, or # steps  
+  slice 0:4 has 0,1,2,3: 4-0=4 elements. think of it as [0-4[.  
+  last index: -1, second to last: -2
+- [row, column] for numpy arrays
+- how to get help: `module.<tab>` or `variable.<tab>` to get a list
+  of available functions/methods; and
+  `help(function_name)` or `?function_name` or `?variable.method_name`
+
+
+first: basic python interpreter, *not* the notebook
 
 ```shell
 $ cd softwarecarpentry-data-python
@@ -52,7 +69,7 @@ quit()
 ```
 
 last line: does not work with python, requires an "interaction" python
-like ipython (or jupyter notebook/lab later)
+like ipython
 
 ```
 ipython
@@ -76,10 +93,11 @@ In [3]: quit()
 $
 ```
 
+now let's use the jupyter lab (notebook otherwise).
 ipython notebook #1: [download](../assets/iPythonNotebooks/swcarpentry1.ipynb)
 or [view](https://github.com/cecileane/computingtools/blob/gh-pages/assets/iPythonNotebooks/swcarpentry1.ipynb)
 
-To use it:
+to use it:
 
 - save it in a convenient folder, such as in the same folder where
   you got the software carpentry data for this module
@@ -88,10 +106,12 @@ To use it:
   `conda install -c conda-forge jupyterlab`, then run jupyter like this:
   `jupyter lab` (has many more features than the "notebook").
 
-About Jupyter:
+about jupyter:
 
 - [blog](http://arogozhnikov.github.io/2016/09/10/jupyter-features.html?utm_content=bufferb0c6b&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) showing lots of features of IPython notebooks, like key bindings.
-- can run many many more "kernels" than just Python --like Julia.
+- can run many many more "kernels" than just Python --like Julia
+- integrate a shell, editor for notebooks, kernels, etc.
+- learn key shortcuts to talk to jupyter
 
 
 ---

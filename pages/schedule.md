@@ -15,6 +15,10 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 <p></p>
 
+#### [Tue 10/25](notes1025.html)
+
+- intro to python, using jupyter lab
+
 #### [Thu 10/20](notes1020.html)
 
 - homework: hw1.3 peer review due, install python 3 (and conda)
