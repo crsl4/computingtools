@@ -38,7 +38,7 @@ to convert: `int`, `float`, `str`, `bool`, and string formatting:
 
 - to store multiple elements:  
   list `[10,20]`, tuple `(10,20)`,
-  dictionary/hash `{"blue":10, "green":20}`
+  dictionary/hash `{"blue":10, "green":20}`, set `set([10,20])`
 
 - a list of lists is not the same as an array. `[1,2]` to create a list.
 - **mutable** (e.g. lists) versus **immutable** objects (e.g. strings, numbers, tuples)
@@ -106,7 +106,7 @@ numpy, time, matplotlib.pyplot, glob, re, sys,
   `y` introduces a local variable name, and `xxx` is some
   simple function of `y` (typically)
 
-- for strings: `.strip()`, `.split()`, `.replace()`
+- for strings: `.strip()`, `.split()`, `.replace()`, `.join()`
 
 ---
 [previous](notes1020.html) & [next](notes1027.html)

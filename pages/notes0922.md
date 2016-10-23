@@ -130,7 +130,7 @@ on [regexp101](https://regex101.com) or [debuggex](https://www.debuggex.com)
 |`?` | zero or one of the previous |
 |`*` | zero or more of the previous |
 |`{4}`| 4 of the previous |
-|`{4,6}`| 4 or 6 of the previous |
+|`{4,6}`| between 4 and 6 of the previous |
 |`{4,}`| 4 or more of the previous |
 |--------|------------|
 |        |            |
