@@ -32,8 +32,9 @@ to convert: `int`, `float`, `str`, `bool`, and string formatting:
 ```python
 "%s %s hello %s" % (5, 5.8, "5")
 "%d %d %d world" % (5, 5.8, int("51"))
-"%.2f %.2f %.2f" % (5, float(5.8), float("51.2"))
-"{} hello {} world {}".format(5, 5.8, "51.2")
+"%.2f %.2f %.1e" % (5, float(5.8), float("51.2"))
+"{} hello {} world {}".format(5, "5.8", 51.2)
+"{:.2f} hello {:+} world {:.1e}".format(5, 5.8, 51.2)
 ```
 
 - to store multiple elements:  
@@ -100,13 +101,16 @@ numpy, time, matplotlib.pyplot, glob, re, sys,
 `len`, `abs`, `in`, `**` for power,  
 `+` to concatenate strings or lists
 
-- for lists: `.append()`, `.reverse()`, `.pop()`, `sorted()`
+- for lists: `.append(x)`, `.extend([x])`, `.insert(i,x),`
+  `.reverse()`, `.pop()`, `.sort()`, `sorted()`
+
 
 - list comprehension: `[xxx for y in z]` where `z` is a collection,
   `y` introduces a local variable name, and `xxx` is some
   simple function of `y` (typically)
 
-- for strings: `.strip()`, `.split()`, `.replace()`, `.join()`
+- for strings: `.strip()`, `.split()`, `.replace()`, `.join()`,
+  `.splitlines()`
 
 ---
 [previous](notes1020.html) & [next](notes1027.html)
