@@ -15,9 +15,18 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 <p></p>
 
+#### [Thu 10/20](notes1020.html)
+
+- python: name binding, namespaces
+- strings and list manipulations
+- file name expansion (globbing), `if` statements, regular expressions
+
 #### [Tue 10/25](notes1025.html)
 
-- intro to python, using jupyter lab
+- intro to python, using jupyter lab: basic types, lists, tuples
+- `for` loops
+- mutable vs immutable objects:
+  consequences for copies (copy and deep-copy) and functions
 
 #### [Thu 10/20](notes1020.html)
 
