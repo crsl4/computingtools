@@ -15,7 +15,7 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 <p></p>
 
-#### [Thu 10/20](notes1020.html)
+#### [Thu 10/27](notes1027.html)
 
 - python: name binding, namespaces
 - strings and list manipulations

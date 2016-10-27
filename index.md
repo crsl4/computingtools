@@ -22,6 +22,7 @@ Course Material
 
 Resources
 
+- [linuxcommand.org](http://linuxcommand.org/)
 - [Software Carpentry](http://software-carpentry.org/lessons/) and last session
   at [UW-Madison](http://uw-madison-aci.github.io/2016-06-08-uwmadison/)
 - [Reproducible Research](https://github.com/kbroman/Talk_ReproRes) by Karl Broman

@@ -7,6 +7,16 @@ description: course notes
 
 ---
 
+## homework
+
+start to form groups for project 1:
+
+- check class list on google doc for others'
+  contact and grad program info
+- at least one Stat and one non-Stat student in each group
+- 3 (preferred) or 4 (exception) students per group
+- email me your group members' names when ready
+
 ## introduction to python
 
 [software carpentry workshop](http://swcarpentry.github.io/python-novice-inflammation/)  
