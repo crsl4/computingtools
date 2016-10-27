@@ -15,6 +15,10 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 <p></p>
 
+#### [Tue 11/1](notes1101.html)
+
+- python regular expressions (con't), functions
+
 #### [Thu 10/27](notes1027.html)
 
 - python: name binding, namespaces
@@ -125,16 +129,16 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 | 9/20-22 | processes, regular expressions, grep, recall/apply best practices, markdown |
 | 9/27-29 | git |
 | 10/4-6  | sed, cut/sort/column, shell scripts |
-| 10/11-13| git (cont), awk, curl/wget |
+| 10/11-13| git (con't), awk, curl/wget |
 | 10/18-20| ssh, scp, tmux, intro to python  |
-| 10/25-27| python |
-| 11/1-3  | intro to julia, just-in-time compiled |
-| 11/8-10 | midterm project: intro to subject area, get started |
-| 11/15-17| project (con't): practice, practice |
-| 11/22   | project (con't): peer review |
+| 10/25-27| python: loops, tests, (im)mutable objects |
+| 11/1-3  | python: regexp, functions, modules |
+| 11/8-10 | python: object-oriented programming |
+| 11/15-17| midterm project: intro to subject area, in-class group work |
+| 11/22   | project (con't): in-class group work, peer review |
 | 11/24   | no class (Thanksgiving) |
-| 11/29-12/1| final project |
-| 12/6-8  | final project (con't) |
+| 11/29-12/1| intro to julia, just-in-time compiled |
+| 12/6-8  | final project |
 | 12/13-15| final project (con't) |
 |---------|---|
 |         |   |

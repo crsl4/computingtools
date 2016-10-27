@@ -61,19 +61,6 @@ for xxx in collection:
     command_still_in_for_loop
 ```
 
-```python
-def function_name(arg1, arg2=0):
-  """docstring here for documentation. optional argument arg2 is 0 by default.
-  Examples:
-
-  >>> 1+1
-  2
-  """
-  assert type(arg1)==int, "error message: here arg1 should be an integer"
-  commands
-  return value # returns None if no return statement
-```
-
 important concepts:
 
 - binding of a name
@@ -99,7 +86,8 @@ numpy, time, matplotlib.pyplot, glob, re, sys,
 
 `type`, `print`, `range`, `list`, `del`,
 `len`, `abs`, `in`, `**` for power,  
-`+` to concatenate strings or lists
+`+` to concatenate strings or lists  
+to check assumptions: `assert test_expression, "error message"`
 
 - for lists: `.append(x)`, `.extend([x])`, `.insert(i,x),`
   `.reverse()`, `.pop()`, `.sort()`, `sorted()`
