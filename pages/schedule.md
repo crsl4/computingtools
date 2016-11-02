@@ -15,9 +15,14 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 <p></p>
 
+#### [Thu 11/3](notes1103.html)
+
+- python functions (con't) with optional argument, assertions, module tests
+
 #### [Tue 11/1](notes1101.html)
 
 - python regular expressions (con't), functions
+- executing a python script or using it as a module
 
 #### [Thu 10/27](notes1027.html)
 
@@ -39,7 +44,7 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 #### [Tue 10/18](notes1018.html)
 
-- homework for 10/20: install python 3
+- homework for 10/20: **install python 3**
 - scp, ssh, nohup, tmux (screen), HP vs HT
 
 #### [Thu 10/13](notes1013.html)

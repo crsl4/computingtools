@@ -14,7 +14,7 @@ Review the solution of exercise 3 for 2 of your peers:
   * provide constructive feedback for each one via a github issue discussion,
   * by email, send me marks according the grading [rubric](https://github.com/UWMadison-computingtools/coursedata/blob/master/rubric.md) (dummy example  [here](https://github.com/UWMadison-computingtools/coursedata/blob/master/marktemplate.csv)).
 
-Install python 3 (and the [conda](http://conda.pydata.org/)
+**Install python 3** (and the [conda](http://conda.pydata.org/)
 package management) if you don't already have it.
 
 - do `which python` and `python --version` to see if you already have python
@@ -50,6 +50,11 @@ package management) if you don't already have it.
   `conda install -c conda-forge jupyterlab`.  
   If you installed miniconda instead of anaconda, do a
   [test drive](http://conda.pydata.org/docs/test-drive.html).
+
+- jupyter: some students using Bash (Ubuntu) on Windows had errors running jupyter.
+  This Windows [bug report](https://github.com/Microsoft/BashOnWindows/issues/185)
+  has a fix that worked for some:
+  `conda install -c jzuhone zeromq=4.1.dev0`
 
 ---
 
