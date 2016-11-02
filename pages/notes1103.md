@@ -84,8 +84,8 @@ if __name__ == '__main__':
 then run the script like this:
 
 ```
-$ ./binomial_v2.py -h
-usage: binomial_v2.py [-h] [-n N] [-k K] [-l] [--test]
+$ ./binomial.py -h
+usage: binomial.py [-h] [-n N] [-k K] [-l] [--test]
 
 optional arguments:
   -h, --help  show this help message and exit

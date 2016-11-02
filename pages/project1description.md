@@ -37,27 +37,27 @@ overall description
 ## group work
 
 Form groups of 3 student ideally, 4 if necessary.
-I can create a github "team" within our
+I will create github "teams" within our
 [organization](https://github.com/UWMadison-computingtools)
 to facilitate collaboration within each group.
 I will ask for new teams for the final project: we learn more as we work
-with more people.
+with more people with diverse backgrounds.
 
 Each student should report to me, at the end of the project, an estimate
 of each student's percentage effort on the whole project for each of these
 categories:
 
 * ideas and design
-* code and comments
-* documentation of the pipeline
-* result summary
+* code and comments inside code
+* documentation of the pipeline (markdown style)
+* result summary (markdown style)
 
 Ideally, all these estimates should be positive in all categories for
 each collaborator, and should average to 33% for a team of 3 students.
-These estimates should be turned in on actual paper, and you should not
-ask your group members to share them with you.
+These estimates should be turned in on actual paper or by email to me,
+and you should *not* ask your group members to share them with you.
 Each commit is authored, so the contribution of each student to actual
-code is automatically tracked by git.
+code is automatically tracked by git. I will check these contributions.
 
 ## pipeline overview
 
@@ -73,7 +73,7 @@ Their  alignment of the 4th chromosome for 171 plants is
 and some scripts that they used for their analysis are available
 [here](https://github.com/nstenz/TICR).
 
-Your task is to reproduce their data collection, using the larger data base that is
+Your task is to reproduce their data collection, using the larger database that is
 now available, and to perform a short analysis to evaluate the variability of the
 genealogical pattern across the genome. An understanding of the subject
 matter is not necessary. Here is a summary of the different steps.
