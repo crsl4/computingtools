@@ -20,17 +20,20 @@ set good computing habits (project organization, documentation,
 improve on `binomial.py`:
 
 - expand the *docstring* to state assumptions
-- *checks* that the input `n` is non-negative
+- *check* that the input `n` is non-negative
 - add an *optional argument* `k` to calculate `log(n!/k!)=log((k+1)*...*n)`,
   with default `k=0`. return log(1)=0 if k>n, with no error.
-- check that `k` is a non-negative integer
+- *check* that `k` is a non-negative integer
 - add associated *tests* as examples inside the docstring:
   with n=5 and some k<5, also n=k=5 (boundary), and n=5, k=6.
-- Write a function "choose" to calculate `log(choose(n,k))` for any integers
-  `n>=0` and `0 <= k <= n`. Start with the docstring and with a test.
-- add an optional argument to this `choose` function, to return the
+- write a function `choose` to calculate the log of
+  choose(n,k): log( n!/k! ) - log( (n-k)! ),  
+  for any integers `n>=0` and `0 <= k <= n`.  
+  Start with the *docstring* that states assumptions, and with *tests*.  
+  Include assertions to *check* inputs.
+- add an *optional argument* to this "choose" function, to return the
   binomial coefficient itself (default) or its log otherwise.
-- add a docstring for the module
+- add a docstring for the module: right after shebang line
 
 
 ## python script arguments
