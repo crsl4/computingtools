@@ -15,6 +15,18 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 <p></p>
 
+#### [Thu 11/10](notes1110.html)
+
+- small group work on hw2
+- list comprehension, running external programs, classes
+
+#### [Tue 11/8](notes1108.html)
+
+- hw2 due F 11/11
+- python: reading from / writing to files, file manipulations
+- break, continue
+- dictionaries
+
 #### [Thu 11/3](notes1103.html)
 
 - python functions (con't) with optional argument, assertions, module tests

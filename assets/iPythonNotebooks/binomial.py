@@ -1,53 +1,84 @@
 #!/usr/bin/env python
+"""module to calculate factorial numbers
+and binomial coefficients on the log scale,
+to avoid overflow with big numbers"""
 
 import math
+import argparse
+# use an Argument Parser object to handle script arguments
+parser = argparse.ArgumentParser()
+parser.add_argument("-n", type=int, help="total number of items to choose from")
+parser.add_argument("-k", type=int, help="number of items to choose")
+parser.add_argument("-l", "--log", action="store_true", help="returns the log binomial coefficient")
+parser.add_argument("--test", action="store_true", help="tests the module and quits")
+args = parser.parse_args()
+# test argument problems early:
+if args.test and (args.n or args.k or args.log):
+    print("ignoring n, k or log arguments")
+if not (args.test or (args.n and args.k)):
+    if __name__ == '__main__':
+        raise Exception("needs 2 integer arguments: -n and -k")
+    # no error if file imported as module
 
-def logfactorial(n, denom=0):
+def logfactorial(n, k=0):
     """calculate the log of factorial n: log(1) + ... + log(n).
-    If denom is provided, calculates: log(denom+1)+ ... + log(n).
-
-    Requires integer, non-negative arguments, but does not require denom<n.
-    If denom >= n then returns 0.
+    optional argument: k (default 0) to calculate log(n!/k!)
+    assumes n and k is a non-negative integer.
+    If k>n, the result is 0, not an error.
     Examples:
 
     >>> round(math.exp(logfactorial(5)),5)
     120.0
-    >>> round(math.exp(logfactorial(5,3)),5)
-    20.0
-    >>> round(math.exp(logfactorial(5,5)),5)
+    >>> round(math.exp(logfactorial(5,4)),5)
+    5.0
+    >>> round(math.exp(logfactorial(5,5)),7)
     1.0
-    >>> round(math.exp(logfactorial(5,6)),5)
-    1.0
+    >>> round(math.exp(logfactorial(10,8)),5)
+    90.0
     """
-    assert type(n)==int, "argument to logfactorial should be an integer"
-    assert n>=0, "argument to logfactorial should be non-negative"
-    assert type(denom)==int, "argument to logfactorial should be an integer"
-    assert denom>=0, "argument to logfactorial should be non-negative"
+    assert isinstance(n,int), "argument to logfactorial should be an integer"
+    assert n >= 0, "argument n should be non-negative: " + str(n)
+    assert type(k)==int, "optional argument k should be an integer"
+    assert k >= 0, "optional argument k should be >= 0:" + str(k)
     res = 0
-    for i in range(denom,n):
+    for i in range(k,n):
         res += math.log(i+1)
     return res
 
-def choose(n, k, log=False):
-    """returns the binomial coefficient choose(n,k)
-    for non-negative integers n and k.
-    If log=True, returns the log of the binomial coefficient.
+def choose(n,k, log=False):
+    """calculate the binomial coefficient:
+    number of ways to choose k elements in a set of n.
+    Both n and k should be integers, non-negative and k<=n.
+    If log=True: returns the log of the binomial coefficient.
     Examples:
 
-    >>> round(choose(5,3),5)
-    10.0
-    >>> round(choose(5,0),5)
+    >>> round(choose(12,10), 7)
+    66.0
+    >>> round(math.exp(choose(5,4, log=True)), 7)
+    5.0
+    >>> round(choose(6,6), 7)
     1.0
-    >>> round(choose(500,410,True),5)
-    232.62616
+    >>> round(choose(0,0), 7)
+    1.0
     """
-    assert k <= n, "choose(n,k) requires k <= n"
-    # other option: return 0 if not log, -infinity if log
-    logres = logfactorial(n,k) - logfactorial(n-k)
-    return logres if log else math.exp(logres)
+    assert k <= n, "n (" + str(n) + ") should be >= k (" + str(k) + ")"
+    res = logfactorial(n,k) - logfactorial(n-k)
+    if not log:
+        res = math.exp(res)
+    return res
 
-if __name__ == '__main__':
+def runTests():
+    print("testing the module...")
     import doctest
     doctest.testmod()
     print("done with tests")
-    print("there are",choose(10,2),"ways to choose 2 people in a group of 10.")
+
+if __name__ == '__main__':
+    if args.test:
+        runTests()
+    else:
+        res = choose(args.n, args.k, args.log)
+        if args.log:
+            print(res)
+        else:
+            print(round(res))
