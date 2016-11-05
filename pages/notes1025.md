@@ -12,8 +12,8 @@ description: course notes
 ## introduction to python
 
 [software carpentry workshop](http://swcarpentry.github.io/python-novice-inflammation/)  
-ipython notebook #1: [download](../assets/iPythonNotebooks/swcarpentry1.ipynb)
-or [view](https://github.com/cecileane/computingtools/blob/gh-pages/assets/iPythonNotebooks/swcarpentry1.ipynb) (input only)
+ipython notebook #1: [download](../assets/python/swcarpentry1.ipynb)
+or [view](https://github.com/cecileane/computingtools/blob/gh-pages/assets/python/swcarpentry1.ipynb) (input only)
 
 ## concepts summary
 

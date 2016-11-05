@@ -97,8 +97,8 @@ $
 ```
 
 now let's use the jupyter lab (notebook otherwise).
-ipython notebook #1: [download](../assets/iPythonNotebooks/swcarpentry1.ipynb)
-or [view](https://github.com/cecileane/computingtools/blob/gh-pages/assets/iPythonNotebooks/swcarpentry1.ipynb)
+ipython notebook #1: [download](../assets/python/swcarpentry1.ipynb)
+or [view](https://github.com/cecileane/computingtools/blob/gh-pages/assets/python/swcarpentry1.ipynb)
 
 to use it:
 

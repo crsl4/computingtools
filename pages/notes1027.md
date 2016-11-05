@@ -20,10 +20,10 @@ start to form groups for project 1:
 ## introduction to python
 
 [software carpentry workshop](http://swcarpentry.github.io/python-novice-inflammation/)  
-ipython notebook #1: [download](../assets/iPythonNotebooks/swcarpentry1.ipynb)
-or [view](https://github.com/cecileane/computingtools/blob/gh-pages/assets/iPythonNotebooks/swcarpentry1.ipynb) (input only)  
-ipython notebook #2: [download](../assets/iPythonNotebooks/swcarpentry2.ipynb)
-or [view](https://github.com/cecileane/computingtools/blob/gh-pages/assets/iPythonNotebooks/swcarpentry2.ipynb) (input only)  
+ipython notebook #1: [download](../assets/python/swcarpentry1.ipynb)
+or [view](https://github.com/cecileane/computingtools/blob/gh-pages/assets/python/swcarpentry1.ipynb) (input only)  
+ipython notebook #2: [download](../assets/python/swcarpentry2.ipynb)
+or [view](https://github.com/cecileane/computingtools/blob/gh-pages/assets/python/swcarpentry2.ipynb) (input only)  
 [code](https://github.com/swcarpentry/python-novice-inflammation/tree/gh-pages/code)
 from software carpentry
 
@@ -33,7 +33,7 @@ from software carpentry
 
 recall regular expression
 [syntax](http://cecileane.github.io/computingtools/pages/notes0922.html#regular-expressions-regexp) from 9/22 notes  
-see [notebook 2](https://github.com/cecileane/computingtools/blob/gh-pages/assets/iPythonNotebooks/swcarpentry2.ipynb), but quick reference summary here.
+see [notebook 2](https://github.com/cecileane/computingtools/blob/gh-pages/assets/python/swcarpentry2.ipynb), but quick reference summary here.
 
 operate on **strings** for simple things:
  `.strip`, `.split`, `.join`, `.replace`, `.index`, `.find`, `.count`,

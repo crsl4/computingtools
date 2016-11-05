@@ -111,7 +111,7 @@ testing the module...
 done with tests
 ```
 
-[here](../assets/iPythonNotebooks/binomial.py) is our final product,
+[here](../assets/python/binomial.py) is our final product,
 with one last change (go find it!) to make the file usable as a module too.
 
 ---

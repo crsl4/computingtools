@@ -18,8 +18,8 @@ and the [debugging](http://swcarpentry.github.io/python-novice-inflammation/09-d
 
 ## python functions
 
-ipython notebook #2: [download](../assets/iPythonNotebooks/swcarpentry2.ipynb)
-or [view](https://github.com/cecileane/computingtools/blob/gh-pages/assets/iPythonNotebooks/swcarpentry2.ipynb) (input only)  
+ipython notebook #2: [download](../assets/python/swcarpentry2.ipynb)
+or [view](https://github.com/cecileane/computingtools/blob/gh-pages/assets/python/swcarpentry2.ipynb) (input only)  
 [code](https://github.com/swcarpentry/python-novice-inflammation/tree/gh-pages/code)
 from software carpentry
 
