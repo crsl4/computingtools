@@ -14,6 +14,10 @@ description: course notes
 We will **use class time** R 11/10 to work on it
 and to discuss strategies in small groups.
 
+finish [dictionary](#dictionaries-hashes) section at home:
+to see the methods `.get`, `.items`, `.keys` and various ways to iterate
+over a dictionary.
+
 
 ## working with files
 
@@ -227,38 +231,6 @@ for dinuc in k2mer:
 note: why sometimes called "hash"?  
 efficient implementations map keys to unique integers using a hash function,
 then can use an array with these integers.
-
-## more on list comprehension
-
-```python
-[xxx for y in z]
-[xxx for y in z if uuu]
-```
-where `z` is a list, dictionary, "range" or other iterable;
-`xxx` and `uuu` typically depend on `y`.  
-examples:
-
-```python
-paramvalues = [10 ** i for i in range(-3,2)] # from "range" object
-[v**2 for v in paramvalues if v >= 0.1] # from list, with condition
-h = {'xtolrel':0.01, 'xtolabs':0.001, 'Nfail':50} # h for hash
-h # note possibly different order
-[h[k]*2 for k in h] # k for key.
-[h[k]*2 for k in h if k.startswith("xtol")] # with condition
-[[k, v*2] for k,v in h.items()] # k for key, v for value. returns a list
-dict( [[k, v*2] for k,v in h.items()] ) # dict() to get a dictionary
-{ k:v*2 for k,v in h.items() } # same result
-# extract a subset of values
-x = [18, 1, 54, 0, 2, 72]
-wanted = [True, True, False, False, True, False]
-[x[i] for i in range(len(x)) if wanted[i]]
-```
-
-nested for loops in list comprehension:
-
-```python
-paramvalues = [a * (10 ** i) for i in range(-3,2) for a in [1,2]]
-```
 
 ---
 [previous](notes1103.html) & [next](notes1110.html)

@@ -15,17 +15,19 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 <p></p>
 
+#### [Tue 11/15](notes1115.html)
+
+- list comprehension, running external programs, classes
+
 #### [Thu 11/10](notes1110.html)
 
-- small group work on hw2
-- list comprehension, running external programs, classes
+- small group work on hw2 (due F 11/11)
 
 #### [Tue 11/8](notes1108.html)
 
-- hw2 due F 11/11
 - python: reading from / writing to files, file manipulations
 - break, continue
-- dictionaries
+- dictionaries (finish at home)
 
 #### [Thu 11/3](notes1103.html)
 

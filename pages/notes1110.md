@@ -15,7 +15,7 @@ on [homework 2](https://github.com/UWMadison-computingtools/coursedata/tree/mast
   and reshuffling groups during class is fine.
 - Please change place to work with people you have not worked with before:
   great way to learn more, even if's a bit uncomfortable at first.
-- Wolve your errors and road blocks and questions with peers.  
+- Solve your errors and road blocks and questions with peers.  
   If you have solved them already, help someone else solve theirs,
   or discuss someone else's solution to discover other strategies.
 - keep engaged and productive
