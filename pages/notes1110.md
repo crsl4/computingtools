@@ -9,7 +9,7 @@ description: course notes
 
 ## group work
 
-on [homework 2](https://github.com/UWMadison-computingtools/coursedata/tree/master/hw2-datamerge), due tomorrow
+on [homework 2](https://github.com/UWMadison-computingtools/coursedata/tree/master/hw2-datamerge), due Tue 11/15
 
 - Work in groups of 3 ideally, groups of 2 or 4 are fine too,
   and reshuffling groups during class is fine.

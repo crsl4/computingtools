@@ -21,7 +21,7 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 #### [Thu 11/10](notes1110.html)
 
-- small group work on hw2 (due F 11/11)
+- small group work on hw2 (due T 11/15)
 
 #### [Tue 11/8](notes1108.html)
 

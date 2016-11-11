@@ -7,6 +7,14 @@ description: course notes
 
 ---
 
+## homework
+
+[homework 2](https://github.com/UWMadison-computingtools/coursedata/tree/master/hw2-datamerge)
+due today.
+Commit and push your work to github, then open a
+[pull request](https://github.com/UWMadison-computingtools/coursedata#commit-push-and-submit-your-work)
+as before.
+
 ## more on list comprehension
 
 concise notation, usually easy to read (for a human)  
