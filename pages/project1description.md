@@ -84,21 +84,22 @@ matter is not necessary. Here is a summary of the different steps.
 2. download the *Arabidopsis thaliana* reference genome,
 3. build individual genomes by mapping the SNPs (step 1)
   onto the reference (step 2),
-4. cut each chromosome in consecutive segments of 10,000 base pairs
-  and build one alignment for each segment (a base pair is like one nucleotide:
+4. cut each chromosome in consecutive blocks of 10,000 base pairs
+  and build one alignment for each block (a base pair is like one nucleotide:
   one A, C, G or T letter),
-5. run RAxML on each segment <!-- or PAUP* --> to get the estimated
-  genealogy (tree) of the plants in your sample from the DNA in that segment,
+5. run RAxML on each block to get the estimated
+  genealogy (tree) of the plants in your sample from the DNA in that block,
 6. calculate pair-wise distances between the trees in step 5:
-  * between all pairs, and
-  * between pairs from neighboring segments
+  * between all pairs of trees from each chromosome, and
+  * between pairs from consecutive blocks
 7. compare these distances between trees:
   * Are the observed distances closer to 0 than if the 2 trees were chosen at
-    random uniformly? (we would expect so if all segments gave the same tree)
-  * Do trees from 2 neighboring segments tend to be more similar to each
-    other (at smaller distance) than trees from 2 randomly chosen segments?
-    (we would expect so if segments were small, due to less "recombination"
-    between neighboring segments).
+    random uniformly? (we would expect so if all blocks gave the same tree:
+    such as if each plant was from a distinct population and populations didn't mix.)
+  * Do trees from 2 consecutive blocks tend to be more similar to each
+    other (at smaller distance) than trees from 2 randomly chosen blocks?
+    (we would expect so if blocks were small, due to less "recombination"
+    between neighboring blocks).
 
 
 Details on each step are given [here](project1stepsinstructions.html).
