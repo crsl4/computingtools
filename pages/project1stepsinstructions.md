@@ -1,6 +1,6 @@
 ---
 layout: page
-title: midterm project - detailed instructions
+title: scripting project - detailed instructions
 description: project details
 ---
 

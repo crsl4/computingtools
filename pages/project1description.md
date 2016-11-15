@@ -1,15 +1,8 @@
 ---
 layout: page
-title: midterm project
+title: scripting project
 description: project description
 ---
-
-<!--
-midterm project
-===============
-overall description
--------------------
--->
 
 ## learning goals
 
@@ -25,12 +18,13 @@ overall description
 - each student should make at least 10 commits and at least one merge commit,
   which may or may not lead to conflict resolution.
 - document each script and each step in the pipeline: with comments to explain
-  what each step or function is doing, input, output, example of function use
+  what each step or function is doing, input, output, example of script usage
 - document the analysis in a markdown `readme.md` file:
   why/when/where things were run, how long each step took,
   where the results files are
-- organize the project files: with separate folders for data, scripts, results
-  (possibly different directories for different types of results)
+- organize the project files: with separate folders for data, scripts, results;
+  possibly different directories for different types of data or different
+  types of results
 - write a summary of results, in a markdown file `report.md`, linked to
   from the main `readme.md` file
 

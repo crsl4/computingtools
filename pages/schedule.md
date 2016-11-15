@@ -15,6 +15,11 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 <p></p>
 
+#### [Tue 11/17](notes1117.html)
+
+- classes (con't)
+- project description
+
 #### [Tue 11/15](notes1115.html)
 
 - list comprehension, running external programs, classes
