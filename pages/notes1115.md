@@ -69,7 +69,11 @@ they recommend .run method
 import subprocess
 
 subprocess.call("date -u", shell=True) # return exist status: 0 if good
+```
 
+to capture the output within python as a string:
+
+```python
 subprocess.check_output("date")
 res = subprocess.check_output(["date", "+%B"])
 res
@@ -77,7 +81,11 @@ res.decode("utf-8")
 res = subprocess.check_output("ps -u ane | grep jupyter", shell=True)
 res
 print(res.decode("utf-8"))
+```
 
+better, e.g. to capture standard output and standard error separately:
+
+```python
 print(subprocess.run("/bin/date")) # does not capture output
 res = subprocess.run("/bin/date +%B", shell=True, stdout=subprocess.PIPE)
 res = subprocess.run(["/bin/date", "+%B"],        stdout=subprocess.PIPE)
@@ -267,7 +275,7 @@ tre.get_nodedist(3,1)
 useful conventions:
 
 - class names are capitalized (e.g. Edge, Tree)
-- **verbs** for methods, **names** for data attributes
+- **verbs** for methods, **nouns** for data attributes
 
 many things we might want to add:
 

@@ -152,9 +152,9 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 | 10/18-20| ssh, scp, tmux, intro to python  |
 | 10/25-27| python: loops, tests, (im)mutable objects |
 | 11/1-3  | python: regexp, functions, modules |
-| 11/8-10 | python: object-oriented programming |
-| 11/15-17| midterm project: intro to subject area, in-class group work |
-| 11/22   | project (con't): in-class group work, peer review |
+| 11/8-10 | python: file io, break/continue, dictionaries; group work |
+| 11/15-17| python: object-oriented programming |
+| 11/22   | project: intro, in-class group work, peer review |
 | 11/24   | no class (Thanksgiving) |
 | 11/29-12/1| intro to julia, just-in-time compiled |
 | 12/6-8  | final project |
