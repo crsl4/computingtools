@@ -15,7 +15,14 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 <p></p>
 
-#### [Tue 11/17](notes1117.html)
+#### Tue 11/22
+
+- small-group work on project:
+  overall [description](project1description)
+  and step-by-step instruction [details](project1stepsinstructions)
+
+
+#### [Thu 11/17](notes1117.html)
 
 - classes (con't)
 - project description
