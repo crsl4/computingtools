@@ -17,9 +17,9 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 #### Tue 11/22
 
-- small-group work on project:
+- small-group work on project, due 12/6:
   overall [description](project1description)
-  and step-by-step instruction [details](project1stepsinstructions)
+  and step-by-step [instructions](project1stepsinstructions)
 
 
 #### [Thu 11/17](notes1117.html)
@@ -165,12 +165,12 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 | 10/25-27| python: loops, tests, (im)mutable objects |
 | 11/1-3  | python: regexp, functions, modules |
 | 11/8-10 | python: file io, break/continue, dictionaries; group work |
-| 11/15-17| python: object-oriented programming |
-| 11/22   | project: intro, in-class group work, peer review |
+| 11/15-17| python: object-oriented programming, project intro |
+| 11/22   | project: in-class group work, peer review |
 | 11/24   | no class (Thanksgiving) |
-| 11/29-12/1| intro to julia, just-in-time compiled |
-| 12/6-8  | final project |
-| 12/13-15| final project (con't) |
+| 11/29-12/1| project: in-class group work, peer review |
+| 12/6-8  | intro to julia, just-in-time compiled |
+| 12/13-15| julia, profiling, job scheduling |
 |---------|---|
 |         |   |
 {: rules="groups"}

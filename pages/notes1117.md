@@ -155,6 +155,7 @@ conclusion: beware, check your code on very simple examples like this if in doub
 
 - overall [description](project1description)
 - step-by-step instruction [details](project1stepsinstructions)
+- due: 12/6
 
 ---
 [previous](notes1115.html) & [next](notes1122.html)
