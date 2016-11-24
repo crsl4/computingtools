@@ -15,7 +15,7 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 <p></p>
 
-#### Tue 11/22
+#### TTR 11/22, 11/29, 12/1
 
 - small-group work on project, due 12/6:
   overall [description](project1description)

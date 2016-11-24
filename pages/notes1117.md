@@ -3,7 +3,7 @@ layout: page
 title: 11/17 notes
 description: course notes
 ---
-[previous](notes1115.html) & [next](notes1122.html)
+[previous](notes1115.html) & [next](notes1206.html)
 
 ---
 
@@ -158,4 +158,4 @@ conclusion: beware, check your code on very simple examples like this if in doub
 - due: 12/6
 
 ---
-[previous](notes1115.html) & [next](notes1122.html)
+[previous](notes1115.html) & [next](notes1206.html)
