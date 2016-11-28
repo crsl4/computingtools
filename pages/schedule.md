@@ -15,6 +15,22 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 <p></p>
 
+#### [Thu 12/15](notes1215.html)
+
+- job scheduling with slurm: guest lecture by Mike Cammilleri
+
+#### Tue 12/13
+
+- guest lecture by [Douglas Bates](https://github.com/dmbates) on Julia
+
+#### [Thu 12/8](notes1208.html)
+
+- Julia, con't
+
+#### [Tue 12/6](notes1206.html)
+
+- intro to Julia: types, syntax, JIT compiled, modes
+
 #### TTR 11/22, 11/29, 12/1
 
 - small-group work on project, due 12/6:
