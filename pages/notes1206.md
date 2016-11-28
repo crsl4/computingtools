@@ -272,8 +272,8 @@ function test(x,y)
   println(x, " is ", relation, " ", y, ".")
 end
 test(x,y)
-1 == 21.0/7
-test(1, 21.0/7)
+1.1+0.1 == 1.2
+test(1.1+0.1, 1.2)
 
 isxbig = x>3 ? "yes" : "no" # ternary expression: very short if/else
 ```
