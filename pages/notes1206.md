@@ -56,14 +56,16 @@ jump to:
 - unsigned (positive) integers: `UInt8` etc.
 - arrays: somewhat like lists in Python
 - tuples: like in Python, e.g. `(3,)` or `(3,"hohoho")`
-- vector: shortcut for 1-dimensional array
+- Vector (Matrix): shortcut for 1-dimensional (2-dimensional) array
+- dictionaries: `Dict`
 
 ```julia
 typeof(3)
 Int
 typeof(3.0)
 typeof("hello")
-a=[1,6,3,2] # Array{Int64,1}: 1-dimensional array, contains Int64 values
+a=[10,6,3,2] # Array{Int64,1}: 1-dimensional array, contains Int64 values
+a[1]
 push!(a,5)
 push!(a,5.0) # converted 5.0 to Int to maintain type of "a"
 push!(a,5.1) # error
@@ -78,8 +80,10 @@ Vector{Int}
 UInt8(4)
 UInt8[8,9,10,11]
 d = [1 2 3; 6 7 8] # 2-dimensional array, 2*3. note syntax
+h = Dict("blue"=>10, "green"=>20)
 ```
 
+julia is **1-indexed** (unlike Python, like R)  
 convention: functions with a bang `!` modify one or more of their arguments.
 Respect it!
 
@@ -102,6 +106,7 @@ Array{Int8}(3,4) # 2-dimensional array: 3x4
 zeros(3) # Float by default
 ones(3)
 zeros(Int,3)
+zeros(Bool,3)
 ```
 
 see limits [here](http://docs.julialang.org/en/release-0.5/manual/integers-and-floating-point-numbers/)
@@ -297,6 +302,18 @@ while n<nmax
   print("n=",n,"\r") # \r to "return carriage" only: re-write on same line
   n += 1
 end
+```
+
+list comprehension:
+
+```julia
+paramvalues = [10.0^i for i in -3:2]
+[v^2 for v in paramvalues if v >= 0.1]
+h = Dict("xtolrel"=>0.01, "xtolabs"=>0.001, "Nfail"=>50)
+h["xtolrel"]
+[h[k]*2 for k in keys(h)]
+[a * 10.0^i for i in -3:2 for a in [1,2]] # 1-dim
+[a * 10.0^i for i in -3:2,    a in [1,2]] # 2-dim
 ```
 
 ---

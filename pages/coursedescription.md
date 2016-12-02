@@ -93,9 +93,8 @@ assessments
 Because one cannot master computational tools without practice or without
 trouble-shooting errors, the course will be primarily project-based.
 All the topics above will be taught in the context of case studies in biology.
-Both midterm and final projects will be collaborative in groups of 3 or 4.
+The final project will be collaborative in groups of 3 or 4.
 
-- [20%] participation in class (formative assessment)
-- [20%] homework exercises
-- [30%] midterm project
-- [30%] final project
+- [20%] participation (in lecture, in-class group work, peer reviews, etc.)
+- [40%] homework exercises
+- [40%] final project

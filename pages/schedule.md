@@ -17,6 +17,7 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 #### [Thu 12/15](notes1215.html)
 
+- project peer review due: comment on github issue as before
 - job scheduling with slurm: guest lecture by Mike Cammilleri
 
 #### Tue 12/13
@@ -29,6 +30,7 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 #### [Tue 12/6](notes1206.html)
 
+- project due: open a github [issue](https://github.com/UWMadison-computingtools/coursedata#commit-push-and-submit-your-work) like before
 - intro to Julia: types, syntax, JIT compiled, modes
 
 #### TTR 11/22, 11/29, 12/1
