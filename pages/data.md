@@ -11,3 +11,5 @@ Below are links to data used in this class.
 - [data](https://github.com/UWMadison-computingtools/coursedata) for homework
 - instructions to [submit](https://github.com/UWMadison-computingtools/coursedata/blob/master/readme.md) homework & get help
 - [grading rubric](https://github.com/UWMadison-computingtools/coursedata/blob/master/rubric.md)
+- final project [description](project1description)
+and step-by-step [instructions](project1stepsinstructions)

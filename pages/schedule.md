@@ -26,6 +26,7 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 #### [Thu 12/8](notes1208.html)
 
+- send project members contributions: see [instructions](project1description#group-work)
 - Julia, con't: syntax, type stability, packages, files,
 
 #### [Tue 12/6](notes1206.html)
