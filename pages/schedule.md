@@ -26,12 +26,12 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 #### [Thu 12/8](notes1208.html)
 
-- Julia, con't
+- Julia, con't: syntax, type stability, packages, files,
 
 #### [Tue 12/6](notes1206.html)
 
 - project due: open a github [issue](https://github.com/UWMadison-computingtools/coursedata#commit-push-and-submit-your-work) like before
-- intro to Julia: types, syntax, JIT compiled, modes
+- intro to Julia: types, JIT compiled, modes
 
 #### TTR 11/22, 11/29, 12/1
 

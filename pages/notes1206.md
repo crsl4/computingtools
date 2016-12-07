@@ -9,8 +9,7 @@ description: course notes
 
 ## homework
 
-before today:
-
+- due today: scripting project
 - install [julia](http://julialang.org) v0.5.0:
   * click on "downloads" then choose the command-line version for your system
   * On a Mac, I had to add the path to julia to my PATH shell variable,
@@ -42,8 +41,6 @@ jump to:
 - [(im)mutable](#immutable-types) types
 - [modes](#modes)
 - [JIT](#just-in-time-jit-compiled) compiled: fast, type declaration not needed
-- type [stability](#type-stability)
-- [syntax](#syntax-overview) overview: functions, docstrings, tests, loops
 
 ### types
 
@@ -135,6 +132,10 @@ immutable: numbers, tuples, strings
 
 ### just-in-time (JIT) compiled
 
+<!-- example below from Steven Johnson's [video](https://www.youtube.com/watch?v=jhlVHoeB05A&list=PLYx7XA2nY5GfavGAILg08spnrR7QWLimi)
+of his talk at EuroSciPy 2014 (1h11)
+-->
+
 ```julia
 function foo(x)
   return x+1
@@ -182,138 +183,6 @@ function addone(x) # no type declaration
 end
 addone(3.5)
 addone([1 2; 6 7])
-```
-
-### type stability
-
-- a variable keeps the same type throughout
-- a function returns an output with the same type for all input of a given type
-
-crucial to make your code fast: compilation can be more efficient.
-example from [here](http://www.johnmyleswhite.com/notebook/2013/12/06/writing-type-stable-code-in-julia/):
-
-```julia
-function sumofsins1(n::Integer)  
-    r = 0  
-    for i in 1:n  
-        r += sin(3.4)  
-    end  
-    return r  
-end  
-```
-version 2 with `r` initialized at `0.0`:
-
-```julia
-function sumofsins2(n::Integer)  
-    r = 0.0  
-    for i in 1:n  
-        r += sin(3.4)  
-    end  
-    return r  
-end
-```
-
-let's use these functions, check output type:
-
-```julia
-sumofsins1(0)
-typeof(sumofsins1(0))
-sumofsins1(1)
-typeof(sumofsins1(1))
-typeof(sumofsins2(0))
-```
-
-and compare their running time:
-
-```
-@time sumofsins1(100_000)
-@time sumofsins2(100_000)
-
-@time [sumofsins1(100_000) for i in 1:1000]
-@time [sumofsins2(100_000) for i in 1:1000]
-```
-
-Julia has tools to diagnose type instability problems:
-
-```julia
-@code_warntype sumofsins2(3)
-@code_warntype sumofsins1(3)
-```
-
-### syntax overview
-
-docstring before the function:
-
-```julia
-"""
-foo(x)
-
-calculate x+1
-"""
-function foo(x)
-  return x+1
-end
-```
-
-`if` statements for tests:
-
-```julia
-x=5; y=6.2
-if x>6 || y>6
-  println("x or y is >6")
-end
-x>6 || error("x is not greater than 6: can't continue")
-x>6 || warn("oops, x not >6, is this normal?")
-x>6 && info("checked: x is greater than 6")
-
-function test(x,y)
-  if x ≈ y # type \approx then TAB. Same as isapprox(x,y).
-    relation = "(approx) equal to"
-  elseif x < y
-    relation = "less than"
-  else
-    relation = "greater than"
-  end
-  println(x, " is ", relation, " ", y, ".")
-end
-test(x,y)
-1.1+0.1 == 1.2
-test(1.1+0.1, 1.2)
-
-isxbig = x>3 ? "yes" : "no" # ternary expression: very short if/else
-```
-
-flow control with loops:
-
-```julia
-for i in 1:10^9 # this a Range object: very small
-  println("i=",i)
-  if i<3
-    continue
-  end
-  # above, same as: i<3 && continue
-  println("\t2i=", 2i) # * not needed
-  i<6 || break
-end
-i # not defined!!
-nmax=100_000
-n=0
-while n<nmax
-  print("n=",n,"\r") # \r to "return carriage" only: re-write on same line
-  n += 1
-end
-```
-
-list comprehension:
-
-```julia
-paramvalues = [10.0^i for i in -3:2]
-[v^2 for v in paramvalues if v >= 0.1]
-h = Dict("xtolrel"=>0.01, "xtolabs"=>0.001, "Nfail"=>50)
-h["xtolrel"]
-[h[k]*2 for k in keys(h)]
-[a * 10.0^i for i in -3:2 for a in [1,2]] # 1-dim
-[a * 10.0^i for i in -3:2,    a in [1,2]] # 2-dim
 ```
 
 ---
