@@ -17,7 +17,7 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 #### [Thu 12/15](notes1215.html)
 
-- project peer review due: comment on github issue as before
+- project peer review due: comment on github issue, and send [rubric](https://github.com/UWMadison-computingtools/coursedata/blob/master/rubric.md) marks ([example](https://github.com/UWMadison-computingtools/coursedata/blob/master/marktemplate.csv))
 - job scheduling with slurm: guest lecture by Mike Cammilleri
 
 #### Tue 12/13
