@@ -316,6 +316,19 @@ b = Array{Int64}(3,4)
 map!(x->2x, b, a)
 ```
 
+`less`: to see the julia code for a function
+
+```julia
+a = [12,4,68]
+pop!(a)
+a
+less(pop!, (Array{Int,1},) ) # function name, tuple of argument types
+```
+
+This last line opens the pager "less" to view the file where
+the code is defined, for the particular function on the particular types
+of input. also shows file name & path.
+
 <!--
 things I would have liked to cover with Julia:
 - try/except/finally and their scope
