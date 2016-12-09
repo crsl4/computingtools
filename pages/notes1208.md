@@ -206,7 +206,8 @@ other cool packages:
 - [RCall](https://github.com/JuliaInterop/RCall.jl) -- see
 Doug Bates's [video](https://youtu.be/oOd3JnEm3c8?list=PLP8iPy9hna6SQPwZUDtAM59-wPzCPyD_S)
 from his talk at JuliCon 2016, on "Julia and R"
-- [Interact](https://github.com/JuliaLang/Interact.jl) with `@manipulate` macro to make interactive graphs with sliders
+- [Interact](https://github.com/JuliaLang/Interact.jl) with `@manipulate` macro
+  to make interactive graphs with sliders: demo by William Sparks
 
 ### using files
 
