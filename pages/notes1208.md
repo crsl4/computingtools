@@ -200,10 +200,13 @@ plot(iris, x=:SepalLength, y=:SepalWidth, color=:Species,
      label= :Species, Geom.point, Geom.label)
 ```
 
-other cool packages: `MixedModels`,
-`RCall` (see
+other cool packages:
+
+- [MixedModels](https://github.com/dmbates/MixedModels.jl), like lme4 in R
+- [RCall](https://github.com/JuliaInterop/RCall.jl) -- see
 Doug Bates's [video](https://youtu.be/oOd3JnEm3c8?list=PLP8iPy9hna6SQPwZUDtAM59-wPzCPyD_S)
-from his talk at JuliCon 2016, on "Julia and R")
+from his talk at JuliCon 2016, on "Julia and R"
+- [Interact](https://github.com/JuliaLang/Interact.jl) with `@manipulate` macro to make interactive graphs with sliders
 
 ### using files
 
@@ -255,8 +258,8 @@ m
 m == nothing
 m = readstring(a) # captures output as string
 m
-run(`ps -u ane | grep jupyter`)            # pipe by the shell
-run(pipeline(`ps -u ane`, `grep jupyter`)) # pipe by julia
+run(`ps -u ane | grep jupyter`)            # error
+run(pipeline(`ps -u ane`, `grep jupyter`)) # pipe by julia. worked 2nd time, not 1st. why??
 ```
 
 to call a Julia script from the shell:
