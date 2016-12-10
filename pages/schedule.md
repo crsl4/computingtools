@@ -17,7 +17,7 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 #### [Thu 12/15](notes1215.html)
 
-- project peer review due: comment on github issue, and send [rubric](https://github.com/UWMadison-computingtools/coursedata/blob/master/rubric.md) marks ([example](https://github.com/UWMadison-computingtools/coursedata/blob/master/marktemplate.csv))  
+- project peer review due: comment on github issue, and send [rubric](https://github.com/UWMadison-computingtools/coursedata/blob/master/rubric.md) marks ([example](https://github.com/UWMadison-computingtools/coursedata/blob/master/marktemplate-project.csv))  
   Regarding the final visualizations, I particularly like [these](https://github.com/UWMadison-computingtools/project1-avengers/tree/master/scripts/step_7/readme.md).
 - job scheduling with slurm: guest lecture by Mike Cammilleri
 
