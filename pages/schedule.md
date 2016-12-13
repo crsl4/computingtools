@@ -23,7 +23,9 @@ jump to: <!-- [next class](#thu-106notes1006html) details -->
 
 #### Tue 12/13
 
-- guest lecture by [Douglas Bates](https://github.com/dmbates) on Julia
+- guest lecture by [Douglas Bates](https://github.com/dmbates):
+  Julia [cheat sheet](https://brakmic.github.io/Julia-Cheat-Sheet/)
+  and [mixed models in julia](https://github.com/dmbates/MixedModelsinJulia)
 
 #### [Thu 12/8](notes1208.html)
 
