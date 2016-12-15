@@ -9,6 +9,31 @@ description: course notes
 
 ## job scheduling with slurm
 
+by Mike Cammilleri
+
+[slurm](https://slurm.schedmd.com): simple linux utility for resource management.  
+[Instructions](http://www.stat.wisc.edu/services/hpc-cluster)
+for our Stat department system.
+
+- head node: `lunchbox.stat.wisc.edu`
+- 6 `marzano` machines, each with 24 CPUs * 2 threads = 48 cores each.
+
+The CHTC on campus uses slurm too for their high performance cluster.
+
+file systems:
+
+- AFS (Andrew File System) like `/u/x/x/username`:
+  great for backing-up data and to share files with colleagues,
+  but slow (and with expiring authentication tokens):
+  bad for running things on the cluster!
+
+- NFS (Network File System) in `/workspace`: do stuff here.
+  All notes machines in the cluster have access to this directory.
+  Software (R, julia, python) installed in `/workspace/software`,
+  install your own packages in `/workspace/<username>/<dir>` and
+  set permissions with `chmod`
+
+
 ### simple test example
 
 This slurm script, in file `echo_submit.sh`,
@@ -21,29 +46,129 @@ runs a pair of `echo` commands 10 times:
 #SBATCH -o screen/echo_%a.log
 #SBATCH -J echo
 #SBATCH --array=0-9
-
-# to get Perl to send emails:
-export PERL5LIB="/s/slurm/lib/perl/5.18.2"
+#SBATCH -t 1
+#SBATCH -n 3
 
 # launch the "echo" script
 echo "slurm task ID = $SLURM_ARRAY_TASK_ID"
 echo "today is $(date)" > output/echo_$SLURM_ARRAY_TASK_ID.out
 ```
 
+`#SBATCH` with no space between `#` and `SBATCH`
+is *not* be interpreted as a comment, but as an option for slurm.
+`# SBATCH whatever` would be a comment, because of the space.
+
 The key line that makes 10 repeats is `#SBATCH --array=0-9`.
 This line also creates a shell variable `SLURM_ARRAY_TASK_ID`,
 which is used as we would with any other shell variable.  
 The first `echo` command produces standard output written to
 a file `screen/echo_?.log`.  
-The second `echo` produces an output file `output/echo_?.out`.  
+The second `echo` produces an output file `output/echo_?.out`.
+
+`#SBATCH -t 1`: expected time, in minutes.
+default is 4 days, which puts the submission at the bottom of the queue.  
+`#SBATCH -n 3`: requests 3 cores; the 9 (super short) tasks
+will be run one after the other.
+
 To run the script:
 
 ```shell
 sbatch echo_submit.sh
 ```
 
+## main slurm commands
+
+`sbatch` submits your batch script to the scheduler (example earlier)
+
+`sinfo` displays current "partitions" and idle, busy, down, up states.  
+partition = group of computers
+
+- "short" partition (default): 4 days limit, 2 nodes (= 2 "marzano" servers)
+- "long" partition: 2 week limit, 4 nodes
+- other partitions listed for various other research groups,
+  resource levels (e.g. higher memory, longer runs, etc.)
+
+```shell
+$ sinfo
+PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
+long         up 14-00:00:0      4   idle marzano[01-04]
+short*       up 4-00:00:00      2   idle marzano[05-06]
+darwin       up   infinite      9   idle darwin[00-06,12-13]
+```
+
+`squeue` displays jobs currently running or queued
+
+`scontrol` to see info on currently running jobs
+
+`scancel` to cancel a submission
+
+```shell
+$ sbatch submit.sh # submits something
+$ squeue           # we see this 'something' is running
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+              7347     short submit.s    mikec  R       0:06      1 marzano05
+$ scontrol show job 7347
+...
+(a lot of information)
+...
+$ scancel 7347     # to kill the submitted something
+$ squeue # the job should be gone: no output here
+```
+
+`sacct`: (account) displays your jobs, cores used, run states,
+even after the jobs have finished
+
+Other notes:
+
+- `#SBATCH -p long`: to send jobs to the "long" partition
+- QOS = quality of service.  
+  max of 24 CPUs used at one time.
+- if the job spawns more processes (like a Python script that runs RAxML using multiple cores): slurm does not know about that, so it's important to allocate
+the appropriate number of cores with `#SBATCH -n xxx`
+- in the slurm script, it can handy to redefine your home with
+  `export HOME=/workspace/ane` (adapt the user name).
+- to user your preferred editor (Atom?) on the remote server:
+  try sshfs (links for [Ubuntu](https://help.ubuntu.com/community/SSHFS)
+  or [Mac](http://stuff-things.net/2015/05/20/fuse-and-sshfs-on-os-x/))
+
+
+On `srun`:
+
+- `printenv` prints the environment variables. To see variables defined
+  by slurm when a submit script is run, do: `srun printenv`.
+  It will print regular environment variables plus all others set by slurm.
+- `srun` is the command-line version of `sbatch <submit-file-name>`, but might
+  need to wait and sit without being able to close the laptop.
+- to understand why a job might cause trouble: run bash on the machine using
+  `srun`. If `scontrol` shows that the job is running
+  on "marzano05": run bash on that machine with
+  `srun --pty -w marzano05 /bin/bash` (pty = pseudo terminal).
+  See what's going on there with `top` etc., then exit bash with `exit`.
+
+
+
 ### example to run a bunch of julia scripts
 
+General guideline:
+**start simple** with 1 task, 1 process, 1 job. expand from there.
+
+Below: we want to run a julia script
+[`onesnaq.jl`](../assets/julia/onesnaq.jl)
+240 times, each time with a different set of parameters.
+To start simple:
+
+1. We check that the julia script runs without error once,
+  with 1 set of parameters, without using slurm, and on a
+  slightly modified script to make it run fast.
+2. To check that the slurm submission works:
+  the script `onesnaq.jl` is modified so that it does *not* run the main
+  time-consuming command, but only prints this command as a string.
+  Writing this string to the intended output file also checks that
+  output files are writable with correct path etc.
+3. Finally: we modify the script `onesnaq.jl` to its final version
+  to run its main time-consuming command, not just print it.
+
+The example below shows steps 1 and 2.
 Save the following script in file `onesnaq_submit.sh`:
 
 ```shell
@@ -53,9 +178,7 @@ Save the following script in file `onesnaq_submit.sh`:
 #SBATCH -o snaq/onesnaq_%a.log
 #SBATCH -J onesnaq
 #SBATCH --array=0-239
-
-# to get Perl to send emails:
-export PERL5LIB="/s/slurm/lib/perl/5.18.2"
+#SBATCH -p long
 
 # use Julia packages in /worskpace/, not defaults in ~/.julia/ (on AFS):
 export JULIA_PKGDIR="/workspace/ane/.julia"
@@ -80,7 +203,7 @@ scp onesnaq* lunchbox.stat.wisc.edu:/workspace/ane/timetest/
 ```
 
 - `ssh` to lunchbox and go to your folder in `workspace`.
-- check that the julia script is working, by running it once,
+- step1 : check that the julia script is working by running it once,
   with the 3<sup>rd</sup> argument set to 0 for instance:
 
 ```shell
@@ -88,7 +211,7 @@ export JULIA_PKGDIR="/workspace/ane/.julia"
 /workspace/software/julia-0.5.0/julia onesnaq.jl 1 30 0
 ```
 
-**run slurm**
+**run slurm** (step 2)
 
 - run the slurm script for a few trials only, to run the julia script
   3 times only (not 240 times yet):
@@ -106,6 +229,10 @@ squeue
 sbatch onesnaq_submit.sh
 squeue
 ```
+
+for step 3: we would just need to edit the Julia script
+to make it run the main command not just print it, then submit
+the final julia script to slurm like in step 2 above.
 
 ### converting the array task ID
 
